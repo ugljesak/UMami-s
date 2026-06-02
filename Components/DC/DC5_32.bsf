@@ -65,6 +65,13 @@ applicable agreement for further details.
 		(text "E" (rect 21 107 28 121)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 16 112))
 	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "O[31..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "O[31..0]" (rect 31 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 80 144))
 	)
