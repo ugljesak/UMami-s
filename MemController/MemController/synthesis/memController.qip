@@ -2,7 +2,7 @@ set_global_assignment -entity "memController" -library "memController" -name IP_
 set_global_assignment -entity "memController" -library "memController" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "memController" -library "memController" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "memController" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../memController.sopcinfo"]
-set_global_assignment -entity "memController" -library "memController" -name SLD_INFO "QSYS_NAME memController HAS_SOPCINFO 1 GENERATION_ID 1780245873"
+set_global_assignment -entity "memController" -library "memController" -name SLD_INFO "QSYS_NAME memController HAS_SOPCINFO 1 GENERATION_ID 1780395403"
 set_global_assignment -library "memController" -name MISC_FILE [file join $::quartus(qip_path) "../../memController.cmp"]
 set_global_assignment -library "memController" -name SLD_FILE [file join $::quartus(qip_path) "memController.debuginfo"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON

@@ -1,0 +1,39 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/ --output-directory=C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/MemController/ --report-file=bsf:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/memController.bsf --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/memController.qsys
+Progress: Loading ARProjekat/memController.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/ --output-directory=C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/MemController/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/memController.html --report-file=sopcinfo:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/memController.sopcinfo --report-file=cmp:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/memController.cmp --report-file=qip:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/MemController/synthesis/memController.qip --report-file=svd --report-file=regmap:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/MemController/synthesis/memController.regmap --report-file=debuginfo:C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/MemController/synthesis/memController.debuginfo --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/sm240358d/Desktop/ARProjekat/ARProjekat/memController.qsys --language=VERILOG
+Progress: Loading ARProjekat/memController.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: memController: Generating memController "memController" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 2 connections
+Info: No custom instruction connections, skipping transform 
+Info: reset_adaptation_transform: After transform: 3 modules, 4 connections
+Info: new_sdram_controller_0: Starting RTL generation for module 'memController_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=memController_new_sdram_controller_0 --dir=C:/Users/SM2403~1/AppData/Local/Temp/alt0606_687542463662339089.dir/0001_new_sdram_controller_0_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SM2403~1/AppData/Local/Temp/alt0606_687542463662339089.dir/0001_new_sdram_controller_0_gen//memController_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'memController_new_sdram_controller_0'
+Info: new_sdram_controller_0: "memController" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: rst_controller: "memController" instantiated altera_reset_controller "rst_controller"
+Info: memController: Done "memController" with 3 modules, 5 files, 49104 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
