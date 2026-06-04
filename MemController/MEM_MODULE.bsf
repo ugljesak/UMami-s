@@ -40,16 +40,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "RD/notWR" (rect 0 0 62 13)(font "Arial" (font_size 8)))
-		(text "RD/notWR" (rect 21 59 83 72)(font "Arial" (font_size 8)))
+		(text "RD" (rect 0 0 20 13)(font "Arial" (font_size 8)))
+		(text "RD" (rect 21 59 41 72)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "clk" (rect 0 0 16 13)(font "Arial" (font_size 8)))
-		(text "clk" (rect 21 75 37 88)(font "Arial" (font_size 8)))
+		(text "WR" (rect 0 0 22 13)(font "Arial" (font_size 8)))
+		(text "WR" (rect 21 75 43 88)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clk" (rect 0 0 16 13)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 91 37 104)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 256 32)
