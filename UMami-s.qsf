@@ -55,6 +55,11 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/REG_FILE
+set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/Components/REG/LD_CL
+set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/Components/REG/LD_CL_INC_DEC
+set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/core/Registers
+set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/Components/ALU
 set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components"
 set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components\\alu"
 set_global_assignment -name BDF_FILE core/Components/DC/DC5_32.bdf
