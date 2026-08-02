@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY "UMami-s"
+set_global_assignment -name TOP_LEVEL_ENTITY ControlUnit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:50:52  JUNE 02, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -49,19 +49,8 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/REG_FILE
-set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/Components/REG/LD_CL
-set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/Components/REG/LD_CL_INC_DEC
-set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/core/Registers
-set_global_assignment -name SEARCH_PATH /home/milos/Faks/AR/Umamis/UMami/Components/ALU
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components"
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components\\alu"
 set_global_assignment -name BDF_FILE core/Components/DC/DC5_32.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC4_32.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC2_32.bdf
@@ -89,3 +78,15 @@ set_global_assignment -name BDF_FILE core/OperationalUnit.bdf
 set_global_assignment -name BDF_FILE core/Registers/IR.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC3_8.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit.bdf
+set_global_assignment -name BDF_FILE "core/ComponentsOLD-ToDelete/DC/DC1_2.bdf"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components"
+set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/reg_file
+set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/components/reg/ld_cl
+set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/components/reg/ld_cl_inc_dec
+set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/core/registers
+set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/components/alu
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components\\alu"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
