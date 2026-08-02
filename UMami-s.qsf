@@ -79,14 +79,21 @@ set_global_assignment -name BDF_FILE core/Registers/IR.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC3_8.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit.bdf
 set_global_assignment -name BDF_FILE "core/ComponentsOLD-ToDelete/DC/DC1_2.bdf"
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components"
-set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/reg_file
-set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/components/reg/ld_cl
-set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/components/reg/ld_cl_inc_dec
-set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/core/registers
-set_global_assignment -name SEARCH_PATH /home/milos/faks/ar/umamis/umami/components/alu
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core\\components\\alu"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE mstatus.bdf
+set_global_assignment -name BDF_FILE core/Registers/mtvec.bdf
+set_global_assignment -name BDF_FILE core/Registers/mepc.bdf
+set_global_assignment -name BDF_FILE core/Registers/mcause.bdf
+set_global_assignment -name BDF_FILE core/Registers/mstatus.bdf
+set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRWriteData.bdf
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core"
+set_global_assignment -name SEARCH_PATH core/components/reg
+set_global_assignment -name SEARCH_PATH core/components/mux
+set_global_assignment -name SEARCH_PATH core/components/dc
+set_global_assignment -name SEARCH_PATH core/operationalunit
+set_global_assignment -name SEARCH_PATH core/controlunit
+set_global_assignment -name SEARCH_PATH core/registers
+set_global_assignment -name SEARCH_PATH core/components

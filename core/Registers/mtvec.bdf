@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 264 232 432 248)
+	(rect 256 176 424 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LD" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 264 296 432 312)
+	(rect 256 240 424 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 264 264 432 280)
+	(rect 256 208 424 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "I[31..0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 264 328 432 344)
+	(rect 256 272 424 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CL" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 776 256 952 272)
+	(rect 768 200 944 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "A[31..0]" (rect 90 0 128 12)(font "Arial" ))
 	(pt 0 8)
@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 560 232 704 360)
+	(rect 552 176 696 304)
 	(text "REG32_LD_CL" (rect 5 0 88 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -143,28 +143,28 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "LD" (rect 520 248 534 260)(font "Arial" ))
-	(pt 560 264)
-	(pt 512 264)
+	(text "LD" (rect 512 192 526 204)(font "Arial" ))
+	(pt 552 208)
+	(pt 504 208)
 )
 (connector
-	(pt 704 264)
-	(pt 776 264)
+	(pt 696 208)
+	(pt 768 208)
 	(bus)
 )
 (connector
-	(text "CLK" (rect 520 296 541 308)(font "Arial" ))
-	(pt 560 312)
-	(pt 512 312)
+	(text "CLK" (rect 512 240 533 252)(font "Arial" ))
+	(pt 552 256)
+	(pt 504 256)
 )
 (connector
-	(text "CL" (rect 520 264 534 276)(font "Arial" ))
-	(pt 560 280)
-	(pt 512 280)
+	(text "CL" (rect 512 208 526 220)(font "Arial" ))
+	(pt 552 224)
+	(pt 504 224)
 )
 (connector
-	(text "I[31..0]" (rect 520 280 555 292)(font "Arial" ))
-	(pt 560 296)
-	(pt 512 296)
+	(text "I[31..0]" (rect 512 224 547 236)(font "Arial" ))
+	(pt 552 240)
+	(pt 504 240)
 	(bus)
 )

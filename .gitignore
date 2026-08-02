@@ -1,0 +1,55 @@
+# ---- Quartus generisani direktorijumi ----
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+hc_output/
+hps_isw_handoff/
+.qsys_edit/
+*_sim/
+
+# ---- Quartus generisani fajlovi ----
+*.qws
+*.jdi
+*.pin
+*.done
+*.rpt
+*.summary
+*.smsg
+*.sld
+*.qdf
+*.cdf
+*.sof
+*.pof
+*.rbf
+*.ptf.*
+PLLJ_PLLSPE_INFO.txt
+c5_pin_model_dump.txt
+
+# ---- Backup / privremeno ----
+*.bak
+*.orig
+*.rej
+*~
+*.swp
+
+# ---- ModelSim / simulacija ----
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+*.mpf
+modelsim.ini
+
+# ---- Softver (C/asm deo, riscv-gcc) ----
+*.o
+*.elf
+*.map
+*.lst
+build/
+
+# ---- OS smece ----
+.DS_Store
+Thumbs.db

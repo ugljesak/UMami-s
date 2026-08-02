@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 320 368 488 384)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CL" (rect 5 0 20 12)(font "Arial" ))
+	(text "CL" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -201,12 +201,6 @@ applicable agreement for further details.
 	(pt 568 272)
 )
 (connector
-	(text "Ii[15..0]" (rect 576 272 613 284)(font "Arial" ))
-	(pt 616 288)
-	(pt 568 288)
-	(bus)
-)
-(connector
 	(text "CLK" (rect 576 288 597 300)(font "Arial" ))
 	(pt 616 304)
 	(pt 568 304)
@@ -233,4 +227,10 @@ applicable agreement for further details.
 	(text "CL" (rect 592 336 606 348)(font "Arial" ))
 	(pt 616 352)
 	(pt 584 352)
+)
+(connector
+	(text "I[31..0]" (rect 576 272 611 284)(font "Arial" ))
+	(pt 616 288)
+	(pt 568 288)
+	(bus)
 )
