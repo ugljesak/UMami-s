@@ -238,7 +238,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 976 240 1192 368)
+	(rect 992 192 1208 320)
 	(text "MemoryController" (rect 57 0 177 16)(font "Arial" (font_size 10)))
 	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
 	(port
