@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 80 408 248 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Ii[7..0]" (rect 5 0 37 12)(font "Arial" ))
+	(text "Ii[7..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -283,7 +283,7 @@ applicable agreement for further details.
 (symbol
 	(rect 864 144 992 336)
 	(text "REG4_LD_CL_INC_DEC" (rect 5 0 138 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst1" (rect 8 176 31 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

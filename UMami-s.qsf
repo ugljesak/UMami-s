@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY ControlUnit
+set_global_assignment -name TOP_LEVEL_ENTITY SDRAM_CNTR
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:50:52  JUNE 02, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -47,8 +47,8 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BDF_FILE core/Components/DC/DC5_32.bdf
@@ -79,6 +79,16 @@ set_global_assignment -name BDF_FILE core/Registers/IR.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC3_8.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit.bdf
 set_global_assignment -name BDF_FILE "core/ComponentsOLD-ToDelete/DC/DC1_2.bdf"
+set_global_assignment -name QIP_FILE gpu/SDRAM_CNTR_ROM.qip
+set_global_assignment -name MIF_FILE gpu/microcode.mif
+set_global_assignment -name QIP_FILE gpu/lpm_mux0.qip
+set_global_assignment -name BDF_FILE gpu/SDRAM_CNTR.bdf
+set_global_assignment -name QIP_FILE gpu/lpm_mux1.qip
+set_global_assignment -name QIP_FILE gpu/lpm_mux2.qip
+set_global_assignment -name SEARCH_PATH core/components/mux
+set_global_assignment -name SEARCH_PATH core/components/dc
+set_global_assignment -name SEARCH_PATH core/components/reg
+set_global_assignment -name SEARCH_PATH core/components
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -97,3 +107,6 @@ set_global_assignment -name SEARCH_PATH core/operationalunit
 set_global_assignment -name SEARCH_PATH core/controlunit
 set_global_assignment -name SEARCH_PATH core/registers
 set_global_assignment -name SEARCH_PATH core/components
+set_global_assignment -name VECTOR_WAVEFORM_FILE gpu/init_test.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
