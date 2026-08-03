@@ -111,3 +111,5 @@ set_global_assignment -name BDF_FILE core/Registers/mcause.bdf
 set_global_assignment -name BDF_FILE core/Registers/mstatus.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRWriteData.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE gpu/init_test.vwf
+set_global_assignment -name BDF_FILE "gpu/sdram_test_files/UMami-s.bdf"
+set_global_assignment -name BDF_FILE gpu/sdram_test_files/sdram_test.bdf
