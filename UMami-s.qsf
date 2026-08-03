@@ -51,6 +51,25 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core"
+set_global_assignment -name SEARCH_PATH core/components/reg
+set_global_assignment -name SEARCH_PATH core/components/mux
+set_global_assignment -name SEARCH_PATH core/components/dc
+set_global_assignment -name SEARCH_PATH core/operationalunit
+set_global_assignment -name SEARCH_PATH core/controlunit
+set_global_assignment -name SEARCH_PATH core/registers
+set_global_assignment -name SEARCH_PATH core/components
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+
+set_global_assignment -name BDF_FILE Components/HELPERS/RisingEdge.bdf
+set_global_assignment -name VHDL_FILE TestUtils/SevenSegmentInterfaceDEC.vhd
+set_global_assignment -name VHDL_FILE TestUtils/CLK_DIVIDER.vhd
+set_global_assignment -name VHDL_FILE TestUtils/Binary2BCD.vhd
 set_global_assignment -name BDF_FILE core/Components/DC/DC5_32.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC4_32.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC2_32.bdf
@@ -85,28 +104,10 @@ set_global_assignment -name QIP_FILE gpu/lpm_mux0.qip
 set_global_assignment -name BDF_FILE gpu/SDRAM_CNTR.bdf
 set_global_assignment -name QIP_FILE gpu/lpm_mux1.qip
 set_global_assignment -name QIP_FILE gpu/lpm_mux2.qip
-set_global_assignment -name SEARCH_PATH core/components/mux
-set_global_assignment -name SEARCH_PATH core/components/dc
-set_global_assignment -name SEARCH_PATH core/components/reg
-set_global_assignment -name SEARCH_PATH core/components
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE mstatus.bdf
 set_global_assignment -name BDF_FILE core/Registers/mtvec.bdf
 set_global_assignment -name BDF_FILE core/Registers/mepc.bdf
 set_global_assignment -name BDF_FILE core/Registers/mcause.bdf
 set_global_assignment -name BDF_FILE core/Registers/mstatus.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRWriteData.bdf
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core"
-set_global_assignment -name SEARCH_PATH core/components/reg
-set_global_assignment -name SEARCH_PATH core/components/mux
-set_global_assignment -name SEARCH_PATH core/components/dc
-set_global_assignment -name SEARCH_PATH core/operationalunit
-set_global_assignment -name SEARCH_PATH core/controlunit
-set_global_assignment -name SEARCH_PATH core/registers
-set_global_assignment -name SEARCH_PATH core/components
 set_global_assignment -name VECTOR_WAVEFORM_FILE gpu/init_test.vwf
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
