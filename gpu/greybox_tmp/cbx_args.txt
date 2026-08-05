@@ -1,15 +1,12 @@
-LPM_SIZE=8
-LPM_TYPE=LPM_MUX
-LPM_WIDTH=14
-LPM_WIDTHS=3
+INTENDED_DEVICE_FAMILY="Cyclone III"
+enable_bus_hold=FALSE
+number_of_channels=16
+open_drain_output=FALSE
+use_differential_mode=FALSE
+use_dynamic_termination_control=FALSE
+use_termination_control=FALSE
 DEVICE_FAMILY="Cyclone III"
-data
-data
-data
-data
-data
-data
-data
-data
-sel
-result
+datain
+oe
+dataio
+dataout
