@@ -196,9 +196,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 448 144 576 336)
+	(rect 864 144 992 336)
 	(text "REG4_LD_CL_INC_DEC" (rect 5 0 138 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst1" (rect 8 176 31 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -281,9 +281,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 864 144 992 336)
+	(rect 448 144 576 336)
 	(text "REG4_LD_CL_INC_DEC" (rect 5 0 138 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 176 31 188)(font "Arial" ))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
