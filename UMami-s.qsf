@@ -66,6 +66,7 @@ set_global_assignment -name SEARCH_PATH core/components
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 
+set_global_assignment -name BDF_FILE core/ControlUnit/Decoder.bdf
 set_global_assignment -name BDF_FILE Components/HELPERS/RisingEdge.bdf
 set_global_assignment -name VHDL_FILE TestUtils/SevenSegmentInterfaceDEC.vhd
 set_global_assignment -name VHDL_FILE TestUtils/CLK_DIVIDER.vhd
@@ -110,6 +111,4 @@ set_global_assignment -name BDF_FILE core/Registers/mepc.bdf
 set_global_assignment -name BDF_FILE core/Registers/mcause.bdf
 set_global_assignment -name BDF_FILE core/Registers/mstatus.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRWriteData.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE gpu/init_test.vwf
-set_global_assignment -name BDF_FILE "gpu/sdram_test_files/UMami-s.bdf"
 set_global_assignment -name BDF_FILE gpu/sdram_test_files/sdram_test.bdf

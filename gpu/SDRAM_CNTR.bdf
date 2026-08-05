@@ -259,6 +259,38 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 1560 1144 1736 1160)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "CKE" (rect 90 0 112 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1560 1184 1736 1200)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "DQM" (rect 90 0 114 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 40 480 72 512)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
@@ -292,7 +324,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1016 120 1232 248)
+	(rect 1200 120 1416 248)
 	(text "SDRAM_CNTR_ROM" (rect 46 0 193 16)(font "Arial" (font_size 10)))
 	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -835,7 +867,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 800 288 864 336)
+	(rect 800 120 864 168)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -867,7 +899,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 816 368 880 416)
+	(rect 816 312 880 360)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst11" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -899,7 +931,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 984 288 1048 336)
+	(rect 800 192 864 240)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -931,7 +963,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1072 368 1136 416)
+	(rect 816 376 880 424)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -963,7 +995,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1168 288 1232 336)
+	(rect 808 256 872 304)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst14" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -995,7 +1027,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1336 368 1400 416)
+	(rect 1128 376 1192 424)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst15" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1687,7 +1719,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 912 376 960 408)
+	(rect 928 320 976 352)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst34" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -1712,7 +1744,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1264 296 1312 328)
+	(rect 928 264 976 296)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst35" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -1737,7 +1769,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1168 376 1216 408)
+	(rect 912 384 960 416)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst36" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -2223,6 +2255,81 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 928 128 976 160)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst28" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 928 200 976 232)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst30" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1256 384 1304 416)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst37" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(text "nRST" (rect 424 200 451 212)(font "Arial" ))
 	(pt 440 216)
@@ -2263,49 +2370,6 @@ applicable agreement for further details.
 	(text "CLK" (rect 408 280 429 292)(font "Arial" ))
 	(pt 416 296)
 	(pt 440 296)
-)
-(connector
-	(text "q[23..0]" (rect 1240 136 1277 148)(font "Arial" ))
-	(pt 1232 152)
-	(pt 1280 152)
-	(bus)
-)
-(connector
-	(text "romAddr[3]" (rect 1136 376 1190 388)(font "Arial" ))
-	(pt 1136 392)
-	(pt 1168 392)
-)
-(connector
-	(text "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" (rect 992 136 1215 148)(font "Arial" ))
-	(pt 984 152)
-	(pt 1016 152)
-	(bus)
-)
-(connector
-	(text "0" (rect 992 152 997 164)(font "Arial" ))
-	(pt 992 168)
-	(pt 1016 168)
-)
-(connector
-	(text "romAddr[5..0]" (rect 936 168 1003 180)(font "Arial" ))
-	(pt 968 184)
-	(pt 1016 184)
-	(bus)
-)
-(connector
-	(text "CLK" (rect 976 216 997 228)(font "Arial" ))
-	(pt 992 232)
-	(pt 1016 232)
-)
-(connector
-	(text "nRST" (rect 1048 368 1075 380)(font "Arial" ))
-	(pt 1040 384)
-	(pt 1072 384)
-)
-(connector
-	(text "MUXromAddr[3]" (rect 1000 384 1076 396)(font "Arial" ))
-	(pt 1040 400)
-	(pt 1072 400)
 )
 (connector
 	(text "nInit_done" (rect 592 376 642 388)(font "Arial" ))
@@ -2628,41 +2692,6 @@ applicable agreement for further details.
 	(pt 824 1008)
 )
 (connector
-	(text "romAddr[0]" (rect 856 296 910 308)(font "Arial" ))
-	(pt 864 312)
-	(pt 896 312)
-)
-(connector
-	(text "nRST" (rect 760 288 787 300)(font "Arial" ))
-	(pt 768 304)
-	(pt 800 304)
-)
-(connector
-	(text "MUXromAddr[0]" (rect 744 304 820 316)(font "Arial" ))
-	(pt 768 320)
-	(pt 800 320)
-)
-(connector
-	(text "nRST" (rect 792 368 819 380)(font "Arial" ))
-	(pt 784 384)
-	(pt 816 384)
-)
-(connector
-	(text "MUXromAddr[1]" (rect 744 384 820 396)(font "Arial" ))
-	(pt 784 400)
-	(pt 816 400)
-)
-(connector
-	(text "romAddr[1]" (rect 872 376 926 388)(font "Arial" ))
-	(pt 880 392)
-	(pt 912 392)
-)
-(connector
-	(text "nRomAddr[1]" (rect 944 376 1008 388)(font "Arial" ))
-	(pt 960 392)
-	(pt 984 392)
-)
-(connector
 	(text "nRomAddr[1]" (rect 672 1016 736 1028)(font "Arial" ))
 	(pt 728 1032)
 	(pt 696 1032)
@@ -2691,61 +2720,6 @@ applicable agreement for further details.
 	(text "refresh_done" (rect 656 816 720 828)(font "Arial" ))
 	(pt 720 832)
 	(pt 680 832)
-)
-(connector
-	(text "nRST" (rect 944 288 971 300)(font "Arial" ))
-	(pt 952 304)
-	(pt 984 304)
-)
-(connector
-	(text "MUXromAddr[2]" (rect 912 304 988 316)(font "Arial" ))
-	(pt 952 320)
-	(pt 984 320)
-)
-(connector
-	(text "nRST" (rect 1136 288 1163 300)(font "Arial" ))
-	(pt 1136 304)
-	(pt 1168 304)
-)
-(connector
-	(text "MUXromAddr[4]" (rect 1096 304 1172 316)(font "Arial" ))
-	(pt 1136 320)
-	(pt 1168 320)
-)
-(connector
-	(text "romAddr[2]" (rect 1048 296 1102 308)(font "Arial" ))
-	(pt 1048 312)
-	(pt 1080 312)
-)
-(connector
-	(text "romAddr[4]" (rect 1240 296 1294 308)(font "Arial" ))
-	(pt 1232 312)
-	(pt 1264 312)
-)
-(connector
-	(text "romAddr[5]" (rect 1408 376 1462 388)(font "Arial" ))
-	(pt 1400 392)
-	(pt 1432 392)
-)
-(connector
-	(text "nRST" (rect 1312 368 1339 380)(font "Arial" ))
-	(pt 1304 384)
-	(pt 1336 384)
-)
-(connector
-	(text "MUXromAddr[5]" (rect 1264 384 1340 396)(font "Arial" ))
-	(pt 1304 400)
-	(pt 1336 400)
-)
-(connector
-	(text "nRomAddr[3]" (rect 1224 376 1288 388)(font "Arial" ))
-	(pt 1216 392)
-	(pt 1248 392)
-)
-(connector
-	(text "nRomAddr[4]" (rect 1320 296 1384 308)(font "Arial" ))
-	(pt 1312 312)
-	(pt 1344 312)
 )
 (connector
 	(text "romAddr[0]" (rect 680 1032 734 1044)(font "Arial" ))
@@ -2969,11 +2943,6 @@ applicable agreement for further details.
 	(pt 616 1416)
 )
 (connector
-	(text "romAddr[4]" (rect 592 1336 646 1348)(font "Arial" ))
-	(pt 648 1352)
-	(pt 616 1352)
-)
-(connector
 	(pt 784 1376)
 	(pt 712 1376)
 )
@@ -3039,11 +3008,174 @@ applicable agreement for further details.
 	(pt 1320 1016)
 	(bus)
 )
+(connector
+	(text "romAddr[4]" (rect 592 1336 646 1348)(font "Arial" ))
+	(pt 648 1352)
+	(pt 616 1352)
+)
+(connector
+	(text "nRST" (rect 760 120 787 132)(font "Arial" ))
+	(pt 768 136)
+	(pt 800 136)
+)
+(connector
+	(text "MUXromAddr[0]" (rect 744 136 820 148)(font "Arial" ))
+	(pt 768 152)
+	(pt 800 152)
+)
+(connector
+	(text "q[23..0]" (rect 1424 136 1461 148)(font "Arial" ))
+	(pt 1416 152)
+	(pt 1464 152)
+	(bus)
+)
+(connector
+	(text "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" (rect 1176 136 1399 148)(font "Arial" ))
+	(pt 1168 152)
+	(pt 1200 152)
+	(bus)
+)
+(connector
+	(text "0" (rect 1176 152 1181 164)(font "Arial" ))
+	(pt 1176 168)
+	(pt 1200 168)
+)
+(connector
+	(text "CLK" (rect 1176 216 1197 228)(font "Arial" ))
+	(pt 1176 232)
+	(pt 1200 232)
+)
+(connector
+	(text "romAddr[5..0]" (rect 1120 168 1187 180)(font "Arial" ))
+	(pt 1200 184)
+	(pt 1152 184)
+	(bus)
+)
+(connector
+	(text "nRomAddr[0]" (rect 975 120 1039 132)(font "Arial" ))
+	(pt 976 144)
+	(pt 1000 144)
+)
+(connector
+	(text "romAddr[0]" (rect 872 120 926 132)(font "Arial" ))
+	(pt 864 144)
+	(pt 928 144)
+)
+(connector
+	(text "nRomAddr[2]" (rect 972 200 1036 212)(font "Arial" ))
+	(pt 976 216)
+	(pt 1008 216)
+)
+(connector
+	(text "nRST" (rect 760 192 787 204)(font "Arial" ))
+	(pt 768 208)
+	(pt 800 208)
+)
+(connector
+	(text "MUXromAddr[2]" (rect 736 208 812 220)(font "Arial" ))
+	(pt 768 224)
+	(pt 800 224)
+)
+(connector
+	(text "romAddr[2]" (rect 872 200 926 212)(font "Arial" ))
+	(pt 864 216)
+	(pt 928 216)
+)
+(connector
+	(text "nRomAddr[4]" (rect 984 264 1048 276)(font "Arial" ))
+	(pt 976 280)
+	(pt 1008 280)
+)
+(connector
+	(text "nRST" (rect 776 256 803 268)(font "Arial" ))
+	(pt 776 272)
+	(pt 808 272)
+)
+(connector
+	(text "MUXromAddr[4]" (rect 736 272 812 284)(font "Arial" ))
+	(pt 776 288)
+	(pt 808 288)
+)
+(connector
+	(text "romAddr[4]" (rect 872 264 926 276)(font "Arial" ))
+	(pt 872 280)
+	(pt 928 280)
+)
+(connector
+	(text "nRST" (rect 792 312 819 324)(font "Arial" ))
+	(pt 784 328)
+	(pt 816 328)
+)
+(connector
+	(text "MUXromAddr[1]" (rect 744 328 820 340)(font "Arial" ))
+	(pt 784 344)
+	(pt 816 344)
+)
+(connector
+	(text "nRomAddr[1]" (rect 960 320 1024 332)(font "Arial" ))
+	(pt 976 336)
+	(pt 1000 336)
+)
+(connector
+	(text "romAddr[1]" (rect 888 320 942 332)(font "Arial" ))
+	(pt 880 336)
+	(pt 928 336)
+)
+(connector
+	(text "nRST" (rect 792 376 819 388)(font "Arial" ))
+	(pt 784 392)
+	(pt 816 392)
+)
+(connector
+	(text "MUXromAddr[3]" (rect 744 392 820 404)(font "Arial" ))
+	(pt 784 408)
+	(pt 816 408)
+)
+(connector
+	(text "romAddr[3]" (rect 880 384 934 396)(font "Arial" ))
+	(pt 880 400)
+	(pt 912 400)
+)
+(connector
+	(text "nRomAddr[3]" (rect 968 384 1032 396)(font "Arial" ))
+	(pt 960 400)
+	(pt 992 400)
+)
+(connector
+	(text "nRST" (rect 1104 376 1131 388)(font "Arial" ))
+	(pt 1096 392)
+	(pt 1128 392)
+)
+(connector
+	(text "MUXromAddr[5]" (rect 1056 392 1132 404)(font "Arial" ))
+	(pt 1096 408)
+	(pt 1128 408)
+)
+(connector
+	(text "romAddr[5]" (rect 1192 384 1246 396)(font "Arial" ))
+	(pt 1256 400)
+	(pt 1192 400)
+)
+(connector
+	(text "nRomAddr[5]" (rect 1323 384 1387 396)(font "Arial" ))
+	(pt 1304 400)
+	(pt 1336 400)
+)
+(connector
+	(text "1" (rect 1536 1136 1541 1148)(font "Arial" ))
+	(pt 1560 1152)
+	(pt 1528 1152)
+)
+(connector
+	(text "0" (rect 1536 1176 1541 1188)(font "Arial" ))
+	(pt 1560 1192)
+	(pt 1528 1192)
+)
 (text "Init Cycle Counter" (rect 328 440 427 454)(font "Arial" (font_size 8)))
 (text "ROM with contorller instructions" (rect 752 440 933 454)(font "Arial" (font_size 8)))
 (text "Refresh Cycle Counter" (rect 336 1120 465 1134)(font "Arial" (font_size 8)))
 (text "Control Logic" (rect 328 760 402 774)(font "Arial" (font_size 8)))
-(text "Output Signal" (rect 1504 1120 1579 1134)(font "Arial" (font_size 8)))
+(text "Output Signal" (rect 1504 1512 1579 1526)(font "Arial" (font_size 8)))
 (text "Bidirectional Buffer DRAM_DQ pins" (rect 872 1120 1071 1134)(font "Arial" (font_size 8)))
 (text "Control Signals" (rect 328 1520 412 1534)(font "Arial" (font_size 8)))
 (line (pt 864 792)(pt 864 1136))
@@ -3052,5 +3184,5 @@ applicable agreement for further details.
 (rectangle (rect 8 112 304 568))
 (rectangle (rect 320 792 1472 1136))
 (rectangle (rect 320 464 1472 776))
-(rectangle (rect 1488 112 2048 1136))
+(rectangle (rect 1488 112 2048 1536))
 (rectangle (rect 320 1152 1472 1536))
