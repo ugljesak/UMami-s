@@ -85,11 +85,9 @@ set_global_assignment -name BDF_FILE core/Components/REG/LD_INC/REG32_LD_INC.bdf
 set_global_assignment -name BDF_FILE core/Registers/PC.bdf
 set_global_assignment -name BDF_FILE core/Registers/MAR.bdf
 set_global_assignment -name BDF_FILE core/Registers/MDR.bdf
-set_global_assignment -name BDF_FILE core/Fetch.bdf
 set_global_assignment -name BDF_FILE core/OperationalUnit.bdf
 set_global_assignment -name BDF_FILE core/Registers/IR.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC3_8.bdf
-set_global_assignment -name BDF_FILE core/ControlUnit.bdf
 set_global_assignment -name BDF_FILE "core/ComponentsOLD-ToDelete/DC/DC1_2.bdf"
 set_global_assignment -name QIP_FILE gpu/SDRAM_CNTR_ROM.qip
 set_global_assignment -name MIF_FILE gpu/microcode.mif
@@ -189,9 +187,9 @@ set_location_assignment PIN_H13 -to unitsH[3]
 set_location_assignment PIN_H12 -to unitsH[2]
 set_location_assignment PIN_F11 -to unitsH[1]
 set_location_assignment PIN_E11 -to unitsH[0]
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\gpu"
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\core\\components\\reg\\ld_cl_inc_dec"
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SEARCH_PATH core/components/reg/ld_d_inc_dec
+set_global_assignment -name SEARCH_PATH gpu
 set_global_assignment -name SEARCH_PATH core/components/reg
 set_global_assignment -name SEARCH_PATH core/components/mux
 set_global_assignment -name SEARCH_PATH core/components/dc
@@ -199,4 +197,3 @@ set_global_assignment -name SEARCH_PATH core/operationalunit
 set_global_assignment -name SEARCH_PATH core/controlunit
 set_global_assignment -name SEARCH_PATH core/registers
 set_global_assignment -name SEARCH_PATH core/components
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
