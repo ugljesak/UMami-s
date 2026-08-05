@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 256 208)
+	(rect 16 16 256 272)
 	(text "SDRAM_CNTR" (rect 5 0 87 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -64,6 +64,13 @@ applicable agreement for further details.
 		(text "wdata[15..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
 		(text "wdata[15..0]" (rect 21 107 92 121)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "CLK_DRAM" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "CLK_DRAM" (rect 21 123 87 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
 	)
 	(port
 		(pt 240 32)
@@ -128,7 +135,28 @@ applicable agreement for further details.
 		(text "rdata[15..0]" (rect 155 155 219 169)(font "Arial" (font_size 8)))
 		(line (pt 240 160)(pt 224 160)(line_width 3))
 	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "CKE" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CKE" (rect 196 171 219 185)(font "Arial" (font_size 8)))
+		(line (pt 240 176)(pt 224 176))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "DQM[1..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "DQM[1..0]" (rect 164 187 219 201)(font "Arial" (font_size 8)))
+		(line (pt 240 192)(pt 224 192)(line_width 3))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "DRAM_CLK" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "DRAM_CLK" (rect 153 203 219 217)(font "Arial" (font_size 8)))
+		(line (pt 240 208)(pt 224 208))
+	)
 	(drawing
-		(rectangle (rect 16 16 224 176))
+		(rectangle (rect 16 16 224 240))
 	)
 )
