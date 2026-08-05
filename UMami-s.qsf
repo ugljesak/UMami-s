@@ -50,14 +50,6 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core"
-set_global_assignment -name SEARCH_PATH core/components/reg
-set_global_assignment -name SEARCH_PATH core/components/mux
-set_global_assignment -name SEARCH_PATH core/components/dc
-set_global_assignment -name SEARCH_PATH core/operationalunit
-set_global_assignment -name SEARCH_PATH core/controlunit
-set_global_assignment -name SEARCH_PATH core/registers
-set_global_assignment -name SEARCH_PATH core/components
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 
@@ -163,8 +155,6 @@ set_location_assignment PIN_H10 -to DQ[2]
 set_location_assignment PIN_G10 -to DQ[1]
 set_location_assignment PIN_D10 -to DQ[0]
 set_location_assignment PIN_E5 -to DRAM_CLK
-set_location_assignment PIN_B8 -to HDQM
-set_location_assignment PIN_E7 -to LDQM
 set_location_assignment PIN_F7 -to RAS
 set_location_assignment PIN_D6 -to WE
 set_location_assignment PIN_A4 -to BA[1]
@@ -175,4 +165,38 @@ set_location_assignment PIN_G7 -to CS
 set_location_assignment PIN_H2 -to button0
 set_location_assignment PIN_G3 -to button1
 set_location_assignment PIN_F1 -to button2
+set_location_assignment PIN_G21 -to CLK
+set_location_assignment PIN_E7 -to DQMH
+set_location_assignment PIN_B8 -to DQML
+set_location_assignment PIN_F14 -to hundH[6]
+set_location_assignment PIN_B17 -to hundH[5]
+set_location_assignment PIN_A17 -to hundH[4]
+set_location_assignment PIN_E15 -to hundH[3]
+set_location_assignment PIN_B16 -to hundH[2]
+set_location_assignment PIN_A16 -to hundH[1]
+set_location_assignment PIN_D15 -to hundH[0]
+set_location_assignment PIN_A15 -to tensH[6]
+set_location_assignment PIN_E14 -to tensH[5]
+set_location_assignment PIN_B14 -to tensH[4]
+set_location_assignment PIN_A14 -to tensH[3]
+set_location_assignment PIN_C13 -to tensH[2]
+set_location_assignment PIN_B13 -to tensH[1]
+set_location_assignment PIN_A13 -to tensH[0]
+set_location_assignment PIN_F13 -to unitsH[6]
+set_location_assignment PIN_F12 -to unitsH[5]
+set_location_assignment PIN_G12 -to unitsH[4]
+set_location_assignment PIN_H13 -to unitsH[3]
+set_location_assignment PIN_H12 -to unitsH[2]
+set_location_assignment PIN_F11 -to unitsH[1]
+set_location_assignment PIN_E11 -to unitsH[0]
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\gpu"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\core\\components\\reg\\ld_cl_inc_dec"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\documents\\github\\umami-s\\core"
+set_global_assignment -name SEARCH_PATH core/components/reg
+set_global_assignment -name SEARCH_PATH core/components/mux
+set_global_assignment -name SEARCH_PATH core/components/dc
+set_global_assignment -name SEARCH_PATH core/operationalunit
+set_global_assignment -name SEARCH_PATH core/controlunit
+set_global_assignment -name SEARCH_PATH core/registers
+set_global_assignment -name SEARCH_PATH core/components
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
