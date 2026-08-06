@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1075 160 1251 176)
+	(rect 1088 160 1264 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "CSR_WDATA[31..0]" (rect 90 0 190 12)(font "Arial" ))
 	(pt 0 8)
@@ -455,16 +455,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "IR[12]" (rect 816 216 846 228)(font "Arial" ))
-	(pt 848 232)
-	(pt 808 232)
-)
-(connector
-	(text "IR[13]" (rect 816 232 846 244)(font "Arial" ))
-	(pt 848 248)
-	(pt 808 248)
-)
-(connector
 	(text "one" (rect 816 248 833 260)(font "Arial" ))
 	(pt 848 264)
 	(pt 808 264)
@@ -531,11 +521,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 632 224)
-	(pt 688 224)
-	(bus)
-)
-(connector
 	(pt 536 128)
 	(pt 536 160)
 	(bus)
@@ -564,6 +549,26 @@ applicable agreement for further details.
 (connector
 	(pt 672 192)
 	(pt 672 208)
+	(bus)
+)
+(connector
+	(pt 632 224)
+	(pt 688 224)
+	(bus)
+)
+(connector
+	(text "IR[13]" (rect 816 232 846 244)(font "Arial" ))
+	(pt 848 248)
+	(pt 808 248)
+)
+(connector
+	(text "IR[12]" (rect 816 216 846 228)(font "Arial" ))
+	(pt 848 232)
+	(pt 808 232)
+)
+(connector
+	(pt 992 168)
+	(pt 1088 168)
 	(bus)
 )
 (junction (pt 344 160))
