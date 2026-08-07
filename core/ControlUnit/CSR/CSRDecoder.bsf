@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 216 208)
+	(text "CSRDecoder" (rect 5 0 78 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CSR[11..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "CSR[11..0]" (rect 21 27 81 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CSR_WE" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "CSR_WE" (rect 21 43 71 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "SEL_MSTATUS" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "SEL_MSTATUS" (rect 92 27 179 41)(font "Arial" (font_size 8)))
+		(line (pt 200 32)(pt 184 32))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "LD_MSTATUS" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "LD_MSTATUS" (rect 99 43 179 57)(font "Arial" (font_size 8)))
+		(line (pt 200 48)(pt 184 48))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "SEL_MTVEC" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "SEL_MTVEC" (rect 109 59 179 73)(font "Arial" (font_size 8)))
+		(line (pt 200 64)(pt 184 64))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "LD_MTVEC" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "LD_MTVEC" (rect 116 75 179 89)(font "Arial" (font_size 8)))
+		(line (pt 200 80)(pt 184 80))
+	)
+	(port
+		(pt 200 96)
+		(output)
+		(text "SEL_MEPC" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "SEL_MEPC" (rect 118 91 179 105)(font "Arial" (font_size 8)))
+		(line (pt 200 96)(pt 184 96))
+	)
+	(port
+		(pt 200 112)
+		(output)
+		(text "LD_MEPC" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "LD_MEPC" (rect 125 107 179 121)(font "Arial" (font_size 8)))
+		(line (pt 200 112)(pt 184 112))
+	)
+	(port
+		(pt 200 128)
+		(output)
+		(text "SEL_MCAUSE" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "SEL_MCAUSE" (rect 99 123 179 137)(font "Arial" (font_size 8)))
+		(line (pt 200 128)(pt 184 128))
+	)
+	(port
+		(pt 200 144)
+		(output)
+		(text "LD_MCAUSE" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "LD_MCAUSE" (rect 106 139 179 153)(font "Arial" (font_size 8)))
+		(line (pt 200 144)(pt 184 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 176))
+	)
+)

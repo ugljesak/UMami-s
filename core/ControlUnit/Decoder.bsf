@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 184 912)
+	(rect 16 16 184 1008)
 	(text "Decoder" (rect 5 0 53 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 880 25 892)(font "Arial" ))
+	(text "inst" (rect 8 976 25 988)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -401,7 +401,49 @@ applicable agreement for further details.
 		(text "inst_ebreak" (rect 81 859 147 873)(font "Arial" (font_size 8)))
 		(line (pt 168 864)(pt 152 864))
 	)
+	(port
+		(pt 168 880)
+		(output)
+		(text "rs1[4..0]" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "rs1[4..0]" (rect 100 875 147 889)(font "Arial" (font_size 8)))
+		(line (pt 168 880)(pt 152 880)(line_width 3))
+	)
+	(port
+		(pt 168 896)
+		(output)
+		(text "rs2[4..0]" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "rs2[4..0]" (rect 100 891 147 905)(font "Arial" (font_size 8)))
+		(line (pt 168 896)(pt 152 896)(line_width 3))
+	)
+	(port
+		(pt 168 912)
+		(output)
+		(text "rd[4..0]" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "rd[4..0]" (rect 107 907 147 921)(font "Arial" (font_size 8)))
+		(line (pt 168 912)(pt 152 912)(line_width 3))
+	)
+	(port
+		(pt 168 928)
+		(output)
+		(text "funct3[2..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "funct3[2..0]" (rect 83 923 147 937)(font "Arial" (font_size 8)))
+		(line (pt 168 928)(pt 152 928)(line_width 3))
+	)
+	(port
+		(pt 168 944)
+		(output)
+		(text "funct7[6..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "funct7[6..0]" (rect 83 939 147 953)(font "Arial" (font_size 8)))
+		(line (pt 168 944)(pt 152 944)(line_width 3))
+	)
+	(port
+		(pt 168 960)
+		(output)
+		(text "opcode[6..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "opcode[6..0]" (rect 77 955 147 969)(font "Arial" (font_size 8)))
+		(line (pt 168 960)(pt 152 960)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 152 880))
+		(rectangle (rect 16 16 152 976))
 	)
 )

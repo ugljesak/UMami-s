@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 216 176)
+	(rect 16 16 200 176)
 	(text "32xREG32_FILE" (rect 5 0 95 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -73,20 +73,20 @@ applicable agreement for further details.
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
-		(pt 200 32)
+		(pt 184 32)
 		(output)
 		(text "RS1DO[31..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
-		(text "RS1DO[31..0]" (rect 103 27 179 41)(font "Arial" (font_size 8)))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
+		(text "RS1DO[31..0]" (rect 87 27 163 41)(font "Arial" (font_size 8)))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(port
-		(pt 200 48)
+		(pt 184 48)
 		(output)
-		(text "RS2DO34[31..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
-		(text "RS2DO34[31..0]" (rect 89 43 179 57)(font "Arial" (font_size 8)))
-		(line (pt 200 48)(pt 184 48)(line_width 3))
+		(text "RS2DO[31..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "RS2DO[31..0]" (rect 87 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 184 48)(pt 168 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 184 144))
+		(rectangle (rect 16 16 168 144))
 	)
 )

@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "inst_ngeu" (rect 0 0 55 14)(font "Arial" (font_size 8)))
-		(text "inst_ngeu" (rect 21 123 76 137)(font "Arial" (font_size 8)))
+		(text "inst_bgeu" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "inst_bgeu" (rect 21 123 76 137)(font "Arial" (font_size 8)))
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
