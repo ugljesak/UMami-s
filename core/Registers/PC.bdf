@@ -50,6 +50,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 160 232 216 248))
 )
 (pin
 	(input)
@@ -374,12 +375,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "I[31..0]" (rect 752 272 787 284)(font "Arial" ))
-	(pt 792 288)
-	(pt 744 288)
-	(bus)
-)
-(connector
 	(text "A[31..0]" (rect 492 288 530 300)(font "Arial" ))
 	(pt 480 304)
 	(pt 536 304)
@@ -397,53 +392,13 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 792 320)
-	(pt 712 320)
-	(bus)
-)
-(connector
-	(pt 792 336)
-	(pt 712 336)
-	(bus)
-)
-(connector
-	(text "INC4" (rect 752 336 777 348)(font "Arial" ))
-	(pt 792 352)
-	(pt 744 352)
-)
-(connector
-	(text "RESET" (rect 752 352 787 364)(font "Arial" ))
-	(pt 792 368)
-	(pt 744 368)
-)
-(connector
-	(text "1" (rect 752 368 757 380)(font "Arial" ))
-	(pt 792 384)
-	(pt 744 384)
-)
-(connector
 	(text "CLK" (rect 1088 288 1109 300)(font "Arial" ))
 	(pt 1120 304)
 	(pt 1088 304)
 )
 (connector
-	(pt 936 288)
-	(pt 1120 288)
-	(bus)
-)
-(connector
 	(pt 712 304)
 	(pt 712 208)
-	(bus)
-)
-(connector
-	(pt 680 304)
-	(pt 712 304)
-	(bus)
-)
-(connector
-	(pt 712 304)
-	(pt 792 304)
 	(bus)
 )
 (connector
@@ -460,16 +415,6 @@ applicable agreement for further details.
 	(text "zero[31..23], 1, zero[21..0]" (rect 590 448 719 460)(font "Arial" ))
 	(pt 712 464)
 	(pt 584 464)
-	(bus)
-)
-(connector
-	(pt 712 320)
-	(pt 712 336)
-	(bus)
-)
-(connector
-	(pt 712 336)
-	(pt 712 464)
 	(bus)
 )
 (connector
@@ -495,6 +440,62 @@ applicable agreement for further details.
 	(text "zero[0]" (rect 1088 256 1121 268)(font "Arial" ))
 	(pt 1120 272)
 	(pt 1088 272)
+)
+(connector
+	(text "I[31..0]" (rect 752 272 787 284)(font "Arial" ))
+	(pt 792 288)
+	(pt 744 288)
+	(bus)
+)
+(connector
+	(pt 712 320)
+	(pt 792 320)
+	(bus)
+)
+(connector
+	(pt 712 336)
+	(pt 792 336)
+	(bus)
+)
+(connector
+	(text "INC4" (rect 752 336 777 348)(font "Arial" ))
+	(pt 792 352)
+	(pt 744 352)
+)
+(connector
+	(text "RESET" (rect 752 352 787 364)(font "Arial" ))
+	(pt 792 368)
+	(pt 744 368)
+)
+(connector
+	(text "1" (rect 752 368 757 380)(font "Arial" ))
+	(pt 792 384)
+	(pt 744 384)
+)
+(connector
+	(pt 1120 288)
+	(pt 936 288)
+	(bus)
+)
+(connector
+	(pt 680 304)
+	(pt 712 304)
+	(bus)
+)
+(connector
+	(pt 712 304)
+	(pt 792 304)
+	(bus)
+)
+(connector
+	(pt 712 320)
+	(pt 712 336)
+	(bus)
+)
+(connector
+	(pt 712 336)
+	(pt 712 464)
+	(bus)
 )
 (junction (pt 712 304))
 (junction (pt 712 336))

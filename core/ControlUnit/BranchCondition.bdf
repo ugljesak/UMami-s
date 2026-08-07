@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 128 232 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Cout" (rect 5 0 29 12)(font "Arial" ))
+	(text "Cout" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 176 232 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst_beq" (rect 5 0 47 12)(font "Arial" ))
+	(text "inst_beq" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 152 232 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst_bne" (rect 5 0 47 12)(font "Arial" ))
+	(text "inst_bne" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 200 232 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst_blt" (rect 5 0 41 12)(font "Arial" ))
+	(text "inst_blt" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,23 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 224 232 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst_bge" (rect 5 0 47 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 64 248 232 264)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst_ngeu" (rect 5 0 53 12)(font "Arial" ))
+	(text "inst_bge" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 272 232 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst_bltu" (rect 5 0 47 12)(font "Arial" ))
+	(text "inst_bltu" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 96 232 112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "R[31..0]" (rect 5 0 46 12)(font "Arial" ))
+	(text "R[31..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -151,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 304 232 320)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Asign" (rect 5 0 33 12)(font "Arial" ))
+	(text "Asign" (rect 5 0 32 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -167,7 +151,23 @@ applicable agreement for further details.
 	(input)
 	(rect 64 328 232 344)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Bsign" (rect 5 0 33 12)(font "Arial" ))
+	(text "Bsign" (rect 5 0 32 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 64 248 232 264)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "inst_bgeu" (rect 5 0 53 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1036,28 +1036,12 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 672 632)
-	(pt 832 632)
-)
-(connector
-	(pt 672 224)
-	(pt 832 224)
-)
-(connector
-	(pt 832 224)
-	(pt 832 440)
-)
-(connector
-	(pt 832 456)
-	(pt 832 632)
-)
-(connector
 	(text "nZ" (rect 992 432 1004 444)(font "Arial" ))
 	(pt 984 448)
 	(pt 1032 448)
 )
 (connector
-	(text "nA[5]" (rect 583 200 608 212)(font "Arial" ))
+	(text "nA[5]" (rect 575 200 600 212)(font "Arial" ))
 	(pt 568 216)
 	(pt 608 216)
 )
@@ -1425,4 +1409,28 @@ applicable agreement for further details.
 	(text "inst_bgeu" (rect 1136 704 1183 716)(font "Arial" ))
 	(pt 1184 720)
 	(pt 1144 720)
+)
+(connector
+	(pt 672 224)
+	(pt 824 224)
+)
+(connector
+	(pt 832 440)
+	(pt 824 440)
+)
+(connector
+	(pt 824 440)
+	(pt 824 224)
+)
+(connector
+	(pt 672 632)
+	(pt 824 632)
+)
+(connector
+	(pt 832 456)
+	(pt 824 456)
+)
+(connector
+	(pt 824 456)
+	(pt 824 632)
 )

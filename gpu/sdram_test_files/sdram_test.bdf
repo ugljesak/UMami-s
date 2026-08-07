@@ -1563,7 +1563,7 @@ applicable agreement for further details.
 		(pt 152 32)
 		(output)
 		(text "out_clk" (rect 0 0 35 12)(font "Arial" ))
-		(text "out_clk" (rect 102 27 131 39)(font "Arial" ))
+		(text "out_clk" (rect 102 27 137 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32))
 	)
 	(parameter
@@ -2193,76 +2193,6 @@ applicable agreement for further details.
 	(pt 296 744)
 )
 (connector
-	(text "busy" (rect 1521 168 1545 180)(font "Arial" ))
-	(pt 1296 184)
-	(pt 1560 184)
-)
-(connector
-	(text "ready" (rect 1512 184 1540 196)(font "Arial" ))
-	(pt 1296 200)
-	(pt 1560 200)
-)
-(connector
-	(text "REQ" (rect 1016 104 1039 116)(font "Arial" ))
-	(pt 1008 120)
-	(pt 1056 120)
-)
-(connector
-	(text "DQM[1..0]" (rect 1304 232 1354 244)(font "Arial" ))
-	(pt 1296 248)
-	(pt 1336 248)
-	(bus)
-)
-(connector
-	(pt 1368 232)
-	(pt 1296 232)
-)
-(connector
-	(text "rdata[15..0]" (rect 1304 200 1360 212)(font "Arial" ))
-	(pt 1296 216)
-	(pt 1400 216)
-	(bus)
-)
-(connector
-	(text "c1" (rect 1032 168 1043 180)(font "Arial" ))
-	(pt 1056 184)
-	(pt 1024 184)
-)
-(connector
-	(text "DRAM_CLK" (rect 1304 248 1363 260)(font "Arial" ))
-	(pt 1296 264)
-	(pt 1344 264)
-)
-(connector
-	(text "c0" (rect 1032 72 1043 84)(font "Arial" ))
-	(pt 1024 88)
-	(pt 1056 88)
-)
-(connector
-	(pt 1416 280)
-	(pt 1296 280)
-	(bus)
-)
-(connector
-	(text "Zero[21..6],realAddr[5..0]" (rect 912 136 1035 148)(font "Arial" ))
-	(pt 1056 152)
-	(pt 1000 152)
-	(bus)
-)
-(connector
-	(pt 1048 96)
-	(pt 1048 104)
-)
-(connector
-	(pt 1048 104)
-	(pt 1056 104)
-)
-(connector
-	(text "WE_" (rect 1000 120 1023 132)(font "Arial" ))
-	(pt 1056 136)
-	(pt 992 136)
-)
-(connector
 	(text "CLK" (rect 616 344 637 356)(font "Arial" ))
 	(pt 656 360)
 	(pt 608 360)
@@ -2338,12 +2268,6 @@ applicable agreement for further details.
 	(pt 112 640)
 )
 (connector
-	(text "Zero[15..6],realAddr[5..0]" (rect 784 152 907 164)(font "Arial" ))
-	(pt 1056 168)
-	(pt 872 168)
-	(bus)
-)
-(connector
 	(pt -32 512)
 	(pt -32 496)
 )
@@ -2365,6 +2289,82 @@ applicable agreement for further details.
 	(text "test_done,Zero[8..0]" (rect 176 384 276 396)(font "Arial" ))
 	(pt 352 400)
 	(pt 208 400)
+	(bus)
+)
+(connector
+	(text "busy" (rect 1521 168 1545 180)(font "Arial" ))
+	(pt 1296 184)
+	(pt 1560 184)
+)
+(connector
+	(text "ready" (rect 1512 184 1540 196)(font "Arial" ))
+	(pt 1296 200)
+	(pt 1560 200)
+)
+(connector
+	(text "REQ" (rect 1016 104 1039 116)(font "Arial" ))
+	(pt 1008 120)
+	(pt 1056 120)
+)
+(connector
+	(text "DQM[1..0]" (rect 1304 232 1354 244)(font "Arial" ))
+	(pt 1296 248)
+	(pt 1336 248)
+	(bus)
+)
+(connector
+	(pt 1368 232)
+	(pt 1296 232)
+)
+(connector
+	(text "rdata[15..0]" (rect 1304 200 1360 212)(font "Arial" ))
+	(pt 1296 216)
+	(pt 1400 216)
+	(bus)
+)
+(connector
+	(text "c1" (rect 1032 168 1043 180)(font "Arial" ))
+	(pt 1056 184)
+	(pt 1024 184)
+)
+(connector
+	(text "DRAM_CLK" (rect 1304 248 1363 260)(font "Arial" ))
+	(pt 1296 264)
+	(pt 1344 264)
+)
+(connector
+	(text "c0" (rect 1032 72 1043 84)(font "Arial" ))
+	(pt 1024 88)
+	(pt 1056 88)
+)
+(connector
+	(pt 1416 280)
+	(pt 1296 280)
+	(bus)
+)
+(connector
+	(text "Zero[21..6],realAddr[5..0]" (rect 912 136 1035 148)(font "Arial" ))
+	(pt 1056 152)
+	(pt 1000 152)
+	(bus)
+)
+(connector
+	(pt 1048 96)
+	(pt 1048 104)
+)
+(connector
+	(pt 1048 104)
+	(pt 1056 104)
+)
+(connector
+	(text "WE_" (rect 1000 120 1023 132)(font "Arial" ))
+	(pt 1056 136)
+	(pt 992 136)
+)
+(connector
+	(text "Zero[15..6],realAddr[5..0]" (rect 784 152 907 164)(font "Arial" ))
+	(pt 1056 168)
+	(pt 872 168)
 	(bus)
 )
 (junction (pt 600 80))
