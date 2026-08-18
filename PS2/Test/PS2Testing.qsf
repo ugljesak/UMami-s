@@ -42,8 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY PS2Test
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:58:00  AUGUST 12, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
-set_global_assignment -name BDF_FILE ../PS2Mouse.bdf
-set_global_assignment -name BDF_FILE PS2Test.bdf
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -51,18 +49,11 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/TestUtils"
-set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/MUX"
-set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/HELPERS"
-set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/COMP"
-set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/REG/LD_CL_INC_DEC"
-set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/REG/LD_CL"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name QIP_FILE ../../Components/MUX/MUX2_1.qip
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_J6 -to SW[0]
 set_location_assignment PIN_H5 -to SW[1]
@@ -107,5 +98,21 @@ set_location_assignment PIN_B17 -to HEXC[5]
 set_location_assignment PIN_F14 -to HEXC[6]
 set_location_assignment PIN_P22 -to PS2CLK
 set_location_assignment PIN_P21 -to PS2Data
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PS2CLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to PS2Data
 set_location_assignment PIN_G21 -to CLK
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL_INC"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL_INC_DEC"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/TestUtils"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/MUX"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/HELPERS"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/COMP"
+set_global_assignment -name VHDL_FILE ../PS2MouseController.vhd
+set_global_assignment -name BDF_FILE ../PS2Mouse.bdf
+set_global_assignment -name BDF_FILE PS2Test.bdf
+set_global_assignment -name QIP_FILE ../../Components/MUX/MUX2_1.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
