@@ -104,6 +104,12 @@ set_location_assignment PIN_G21 -to CLK
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
 set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
 set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_global_assignment -name VHDL_FILE ../PS2MouseController.vhd
+set_global_assignment -name BDF_FILE ../PS2Mouse.bdf
+set_global_assignment -name BDF_FILE PS2Test.bdf
+set_global_assignment -name QIP_FILE ../../Components/MUX/MUX2_1.qip
+set_location_assignment PIN_H2 -to BTN0
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/ADD"
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL_INC"
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL_INC_DEC"
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL"
@@ -111,8 +117,4 @@ set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/TestUtils"
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/MUX"
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/HELPERS"
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/Components/COMP"
-set_global_assignment -name VHDL_FILE ../PS2MouseController.vhd
-set_global_assignment -name BDF_FILE ../PS2Mouse.bdf
-set_global_assignment -name BDF_FILE PS2Test.bdf
-set_global_assignment -name QIP_FILE ../../Components/MUX/MUX2_1.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

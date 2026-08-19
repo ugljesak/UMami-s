@@ -391,16 +391,6 @@ applicable agreement for further details.
 	(pt 1272 304)
 )
 (connector
-	(text "0" (rect 600 304 607 315)(font "Arial" ))
-	(pt 632 320)
-	(pt 592 320)
-)
-(connector
-	(text "1" (rect 600 288 607 299)(font "Arial" ))
-	(pt 632 304)
-	(pt 592 304)
-)
-(connector
 	(text "Ai[3..0]" (rect 776 288 811 299)(font "Arial" ))
 	(pt 760 304)
 	(pt 816 304)
@@ -431,6 +421,16 @@ applicable agreement for further details.
 	(pt 576 352)
 	(pt 632 352)
 	(bus)
+)
+(connector
+	(text "1" (rect 600 304 607 315)(font "Arial" ))
+	(pt 632 320)
+	(pt 592 320)
+)
+(connector
+	(text "0" (rect 600 288 607 299)(font "Arial" ))
+	(pt 632 304)
+	(pt 592 304)
 )
 (text "Consts" (rect 320 192 360 205)(font "Arial" (font_size 8)))
 (text "Check if all bits are 0 or 1 to swap current OUT value" (rect 848 568 1145 581)(font "Arial" (font_size 8)))
