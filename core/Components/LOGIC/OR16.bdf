@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 544 96 672 192)
-	(text "OR8" (rect 5 0 32 13)(font "Arial" (font_size 8)))
+	(text "OR8B" (rect 5 0 32 13)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 81 26 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -98,7 +98,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 544 192 672 288)
-	(text "OR8" (rect 5 0 32 13)(font "Arial" (font_size 8)))
+	(text "OR8B" (rect 5 0 32 13)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 81 32 92)(font "Arial" ))
 	(port
 		(pt 0 32)

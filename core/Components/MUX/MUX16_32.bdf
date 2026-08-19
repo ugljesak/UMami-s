@@ -1839,12 +1839,12 @@ applicable agreement for further details.
 	(pt 464 336)
 )
 (connector
-	(text "S2" (rect 472 336 484 348)(font "Arial" ))
+	(text "nS2" (rect 472 336 490 348)(font "Arial" ))
 	(pt 496 352)
 	(pt 464 352)
 )
 (connector
-	(text "S3" (rect 472 352 484 364)(font "Arial" ))
+	(text "nS3" (rect 472 352 490 364)(font "Arial" ))
 	(pt 496 368)
 	(pt 464 368)
 )

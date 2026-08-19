@@ -153,6 +153,12 @@ set_global_assignment -name SEARCH_PATH core/operationalunit
 set_global_assignment -name SEARCH_PATH core/controlunit
 set_global_assignment -name SEARCH_PATH core/registers
 set_global_assignment -name SEARCH_PATH core/components
+set_global_assignment -name SEARCH_PATH core/components/add
+set_global_assignment -name SEARCH_PATH core/components/sub
+set_global_assignment -name SEARCH_PATH core/components/logic
+set_global_assignment -name SEARCH_PATH core/components/shift
+set_global_assignment -name SEARCH_PATH core/components/cmp
+set_global_assignment -name SEARCH_PATH core/components/helpers
 set_global_assignment -name BDF_FILE core/Components/ALU/ALU32.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRDecoder.bdf
 set_global_assignment -name BDF_FILE REG_FILE/32xREG32_FILE.bdf
@@ -203,3 +209,32 @@ set_global_assignment -name BDF_FILE core/Registers/mstatus.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRWriteData.bdf
 set_global_assignment -name BDF_FILE gpu/sdram_test_files/sdram_test.bdf
 set_global_assignment -name QIP_FILE gpu/GPUPLL.qip
+
+# ---- ALU i njena hijerarhija ----
+set_global_assignment -name BDF_FILE core/Components/ALU.bdf
+set_global_assignment -name BDF_FILE core/Components/CMP/CMP32.bdf
+set_global_assignment -name BDF_FILE core/Components/SHIFT/SHIFT32.bdf
+set_global_assignment -name BDF_FILE core/Components/HELPERS/ZEXT1_32.bdf
+set_global_assignment -name BDF_FILE core/Components/MUX/MUX2_32.bdf
+set_global_assignment -name BDF_FILE core/Components/MUX/MUX16_32.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD32.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD16.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD8.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD4.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD2.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/Add1.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB32.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB16.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB8.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB4.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB2.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB1.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/XOR32.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/XOR16.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/XOR8.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR32.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR16.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR8B.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND32.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND16.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND8B.bdf

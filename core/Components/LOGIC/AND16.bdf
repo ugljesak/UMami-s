@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 528 88 656 184)
-	(text "and8" (rect 5 0 33 14)(font "Arial" (font_size 8)))
+	(text "AND8B" (rect 5 0 33 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -98,7 +98,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 536 216 664 312)
-	(text "and8" (rect 5 0 33 14)(font "Arial" (font_size 8)))
+	(text "AND8B" (rect 5 0 33 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
 		(pt 0 32)
