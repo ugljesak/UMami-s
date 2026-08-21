@@ -464,6 +464,13 @@ applicable agreement for further details.
 		(text "TrapReq" (rect 123 171 171 185)(font "Arial" (font_size 8)))
 		(line (pt 192 176)(pt 176 176))
 	)
+	(port
+		(pt 192 192)
+		(output)
+		(text "IsAlu" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "IsAlu" (rect 143 187 171 201)(font "Arial" (font_size 8)))
+		(line (pt 192 192)(pt 176 192))
+	)
 	(drawing
 		(rectangle (rect 16 16 176 880))
 	)
