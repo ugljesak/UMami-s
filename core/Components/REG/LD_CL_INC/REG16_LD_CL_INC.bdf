@@ -150,7 +150,7 @@ applicable agreement for further details.
 (symbol
 	(rect 384 368 512 528)
 	(text "REG4_LD_CL_INC" (rect 5 0 117 13)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 144 32 155)(font "Arial" ))
+	(text "inst4" (rect 8 145 32 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -204,7 +204,7 @@ applicable agreement for further details.
 		(pt 128 48)
 		(output)
 		(text "Ci1" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ci1" (rect 90 43 110 56)(font "Arial" (font_size 8)))
+		(text "Ci1" (rect 87 43 107 56)(font "Arial" (font_size 8)))
 		(line (pt 128 48)(pt 112 48))
 	)
 	(drawing
@@ -214,7 +214,7 @@ applicable agreement for further details.
 (symbol
 	(rect 608 320 736 480)
 	(text "REG4_LD_CL_INC" (rect 5 0 117 13)(font "Arial" (font_size 8)))
-	(text "inst5" (rect 8 144 32 155)(font "Arial" ))
+	(text "inst5" (rect 8 145 32 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -268,7 +268,7 @@ applicable agreement for further details.
 		(pt 128 48)
 		(output)
 		(text "Ci1" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ci1" (rect 90 43 110 56)(font "Arial" (font_size 8)))
+		(text "Ci1" (rect 87 43 107 56)(font "Arial" (font_size 8)))
 		(line (pt 128 48)(pt 112 48))
 	)
 	(drawing
@@ -278,7 +278,7 @@ applicable agreement for further details.
 (symbol
 	(rect 840 272 968 432)
 	(text "REG4_LD_CL_INC" (rect 5 0 117 13)(font "Arial" (font_size 8)))
-	(text "inst6" (rect 8 144 32 155)(font "Arial" ))
+	(text "inst6" (rect 8 145 32 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -332,7 +332,7 @@ applicable agreement for further details.
 		(pt 128 48)
 		(output)
 		(text "Ci1" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ci1" (rect 90 43 110 56)(font "Arial" (font_size 8)))
+		(text "Ci1" (rect 87 43 107 56)(font "Arial" (font_size 8)))
 		(line (pt 128 48)(pt 112 48))
 	)
 	(drawing
@@ -342,7 +342,7 @@ applicable agreement for further details.
 (symbol
 	(rect 1064 224 1192 384)
 	(text "REG4_LD_CL_INC" (rect 5 0 117 13)(font "Arial" (font_size 8)))
-	(text "inst7" (rect 8 144 32 155)(font "Arial" ))
+	(text "inst7" (rect 8 145 32 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -396,7 +396,7 @@ applicable agreement for further details.
 		(pt 128 48)
 		(output)
 		(text "Ci1" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ci1" (rect 90 43 110 56)(font "Arial" (font_size 8)))
+		(text "Ci1" (rect 87 43 107 56)(font "Arial" (font_size 8)))
 		(line (pt 128 48)(pt 112 48))
 	)
 	(drawing
