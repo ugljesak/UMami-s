@@ -733,15 +733,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 64 256)
-	(pt 64 240)
-)
-(connector
-	(text "zero" (rect 75 224 95 236)(font "Arial" ))
-	(pt 64 240)
-	(pt 80 240)
-)
-(connector
 	(pt 144 232)
 	(pt 144 264)
 )
@@ -988,21 +979,9 @@ applicable agreement for further details.
 	(pt 832 368)
 )
 (connector
-	(text "zero[31..0], lss" (rect 944 152 1017 164)(font "Arial" ))
-	(pt 1016 168)
-	(pt 936 168)
-	(bus)
-)
-(connector
 	(text "o_sh[31..0]" (rect 944 136 999 148)(font "Arial" ))
 	(pt 1016 152)
 	(pt 936 152)
-	(bus)
-)
-(connector
-	(text "zero[31..0], lssu" (rect 944 168 1023 180)(font "Arial" ))
-	(pt 1016 184)
-	(pt 936 184)
 	(bus)
 )
 (connector
@@ -1080,5 +1059,28 @@ applicable agreement for further details.
 	(text "o_sh[31..0]" (rect 504 650 559 662)(font "Arial" ))
 	(pt 504 664)
 	(pt 536 664)
+	(bus)
+)
+(connector
+	(text "zero[31..0]" (rect 944 152 995 164)(font "Arial" ))
+	(pt 1016 168)
+	(pt 936 168)
+	(bus)
+)
+(connector
+	(text "zero[31..0]" (rect 944 168 995 180)(font "Arial" ))
+	(pt 1016 184)
+	(pt 936 184)
+	(bus)
+)
+(connector
+	(pt 64 256)
+	(pt 64 240)
+	(bus)
+)
+(connector
+	(text "zero[31..0]" (rect 75 224 126 236)(font "Arial" ))
+	(pt 64 240)
+	(pt 80 240)
 	(bus)
 )

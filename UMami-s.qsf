@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY sdram_test
+set_global_assignment -name TOP_LEVEL_ENTITY "UMami-s"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:50:52  JUNE 02, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -53,9 +53,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_D2 -to SW[9]
 set_location_assignment PIN_E4 -to SW[8]
@@ -140,7 +137,6 @@ set_location_assignment PIN_H13 -to unitsH[3]
 set_location_assignment PIN_H12 -to unitsH[2]
 set_location_assignment PIN_F11 -to unitsH[1]
 set_location_assignment PIN_E11 -to unitsH[0]
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SEARCH_PATH memory/
 set_global_assignment -name SEARCH_PATH core/components/alu
 set_global_assignment -name SEARCH_PATH reg_file
@@ -238,3 +234,9 @@ set_global_assignment -name BDF_FILE core/Components/LOGIC/OR8B.bdf
 set_global_assignment -name BDF_FILE core/Components/LOGIC/AND32.bdf
 set_global_assignment -name BDF_FILE core/Components/LOGIC/AND16.bdf
 set_global_assignment -name BDF_FILE core/Components/LOGIC/AND8B.bdf
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE REG_FILE/lpm_mux3.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

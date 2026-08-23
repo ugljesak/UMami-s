@@ -824,18 +824,6 @@ applicable agreement for further details.
 	(pt 1008 320)
 )
 (connector
-	(text "fill[31..15],SR3[31..16]" (rect 1200 274 1312 286)(font "Arial" ))
-	(pt 1296 288)
-	(pt 1200 288)
-	(bus)
-)
-(connector
-	(text "fill31..24],SR2[31..8]" (rect 952 274 1054 286)(font "Arial" ))
-	(pt 1040 288)
-	(pt 952 288)
-	(bus)
-)
-(connector
 	(text "SR0[31..0]" (rect 448 256 501 268)(font "Arial" ))
 	(pt 440 272)
 	(pt 544 272)
@@ -935,5 +923,17 @@ applicable agreement for further details.
 	(text "fill[31..0]" (rect 168 312 211 324)(font "Arial" ))
 	(pt 160 328)
 	(pt 184 328)
+	(bus)
+)
+(connector
+	(text "fill[31..24],SR2[31..8]" (rect 952 274 1058 286)(font "Arial" ))
+	(pt 1040 288)
+	(pt 952 288)
+	(bus)
+)
+(connector
+	(text "fill[31..16],SR3[31..16]" (rect 1200 274 1312 286)(font "Arial" ))
+	(pt 1296 288)
+	(pt 1200 288)
 	(bus)
 )
