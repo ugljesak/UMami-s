@@ -54,68 +54,7 @@ set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_D2 -to SW[9]
-set_location_assignment PIN_E4 -to SW[8]
-set_location_assignment PIN_E3 -to SW[7]
-set_location_assignment PIN_H7 -to SW[6]
-set_location_assignment PIN_J7 -to SW[5]
-set_location_assignment PIN_G5 -to SW[4]
-set_location_assignment PIN_G4 -to SW[3]
-set_location_assignment PIN_H6 -to SW[2]
-set_location_assignment PIN_H5 -to SW[1]
-set_location_assignment PIN_J6 -to SW[0]
-set_location_assignment PIN_B1 -to LED[9]
-set_location_assignment PIN_B2 -to LED[8]
-set_location_assignment PIN_C2 -to LED[7]
-set_location_assignment PIN_C1 -to LED[6]
-set_location_assignment PIN_E1 -to LED[5]
-set_location_assignment PIN_F2 -to LED[4]
-set_location_assignment PIN_H1 -to LED[3]
-set_location_assignment PIN_J3 -to LED[2]
-set_location_assignment PIN_J2 -to LED[1]
-set_location_assignment PIN_J1 -to LED[0]
-set_location_assignment PIN_A7 -to ADDR[11]
-set_location_assignment PIN_B4 -to ADDR[10]
-set_location_assignment PIN_B7 -to ADDR[9]
-set_location_assignment PIN_C7 -to ADDR[8]
-set_location_assignment PIN_A6 -to ADDR[7]
-set_location_assignment PIN_B6 -to ADDR[6]
-set_location_assignment PIN_C6 -to ADDR[5]
-set_location_assignment PIN_A5 -to ADDR[4]
-set_location_assignment PIN_C3 -to ADDR[3]
-set_location_assignment PIN_B3 -to ADDR[2]
-set_location_assignment PIN_A3 -to ADDR[1]
-set_location_assignment PIN_C4 -to ADDR[0]
-set_location_assignment PIN_F10 -to DQ[15]
-set_location_assignment PIN_E10 -to DQ[14]
-set_location_assignment PIN_A10 -to DQ[13]
-set_location_assignment PIN_B10 -to DQ[12]
-set_location_assignment PIN_C10 -to DQ[11]
-set_location_assignment PIN_A9 -to DQ[10]
-set_location_assignment PIN_B9 -to DQ[9]
-set_location_assignment PIN_A8 -to DQ[8]
-set_location_assignment PIN_F8 -to DQ[7]
-set_location_assignment PIN_H9 -to DQ[6]
-set_location_assignment PIN_G9 -to DQ[5]
-set_location_assignment PIN_F9 -to DQ[4]
-set_location_assignment PIN_E9 -to DQ[3]
-set_location_assignment PIN_H10 -to DQ[2]
-set_location_assignment PIN_G10 -to DQ[1]
-set_location_assignment PIN_D10 -to DQ[0]
-set_location_assignment PIN_E5 -to DRAM_CLK
-set_location_assignment PIN_F7 -to RAS
-set_location_assignment PIN_D6 -to WE
-set_location_assignment PIN_A4 -to BA[1]
-set_location_assignment PIN_B5 -to BA[0]
-set_location_assignment PIN_G8 -to CAS
-set_location_assignment PIN_E6 -to CKE
-set_location_assignment PIN_G7 -to CS
-set_location_assignment PIN_H2 -to button0
-set_location_assignment PIN_G3 -to button1
-set_location_assignment PIN_F1 -to button2
 set_location_assignment PIN_G21 -to CLK
-set_location_assignment PIN_E7 -to DQMH
-set_location_assignment PIN_B8 -to DQML
 set_location_assignment PIN_F14 -to hundH[6]
 set_location_assignment PIN_B17 -to hundH[5]
 set_location_assignment PIN_A17 -to hundH[4]
@@ -164,6 +103,12 @@ set_global_assignment -name SEARCH_PATH core/components/cmp
 set_global_assignment -name SEARCH_PATH core/components/helpers
 set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_location_assignment PIN_H2 -to RESET
+set_location_assignment PIN_G3 -to LOAD
+set_global_assignment -name SDC_FILE "U-Mamis.sdc"
 set_global_assignment -name VHDL_FILE REG_FILE/RegFile32x32.vhd
 set_global_assignment -name MIF_FILE memory/ramInit.mif
 set_global_assignment -name MIF_FILE memory/romInit.mif
@@ -270,4 +215,5 @@ set_global_assignment -name QIP_FILE memory/ROMController.qip
 set_global_assignment -name VHDL_FILE memory/ROMController.vhd
 set_global_assignment -name SOURCE_FILE memory/ROMController.cmp
 set_global_assignment -name QIP_FILE core/Components/MUX/MUX32_32.qip
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING OFF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
