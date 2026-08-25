@@ -4298,10 +4298,6 @@ applicable agreement for further details.
 	(pt 960 440)
 )
 (connector
-	(pt 888 488)
-	(pt 960 488)
-)
-(connector
 	(pt 888 504)
 	(pt 960 504)
 )
@@ -4520,11 +4516,6 @@ applicable agreement for further details.
 	(pt 1544 320)
 )
 (connector
-	(text "nz_rs2" (rect 1734 304 1765 316)(font "Arial" ))
-	(pt 1720 320)
-	(pt 1752 320)
-)
-(connector
 	(text "n_stall" (rect 1368 152 1399 164)(font "Arial" ))
 	(pt 1368 168)
 	(pt 1416 168)
@@ -4613,31 +4604,6 @@ applicable agreement for further details.
 	(text "rs1[3]" (rect 1368 304 1396 316)(font "Arial" ))
 	(pt 1360 320)
 	(pt 1408 320)
-)
-(connector
-	(text "rs2[0]" (rect 1576 256 1604 268)(font "Arial" ))
-	(pt 1568 272)
-	(pt 1616 272)
-)
-(connector
-	(text "rs2[2]" (rect 1576 288 1604 300)(font "Arial" ))
-	(pt 1568 304)
-	(pt 1616 304)
-)
-(connector
-	(text "rs2[1]" (rect 1576 272 1604 284)(font "Arial" ))
-	(pt 1568 288)
-	(pt 1616 288)
-)
-(connector
-	(text "rs2[4]" (rect 1576 320 1604 332)(font "Arial" ))
-	(pt 1568 336)
-	(pt 1616 336)
-)
-(connector
-	(text "rs2[3]" (rect 1576 304 1604 316)(font "Arial" ))
-	(pt 1568 320)
-	(pt 1616 320)
 )
 (connector
 	(text "funct3[2..0]" (rect 1625 -40 1682 -28)(font "Arial" ))
@@ -5686,12 +5652,7 @@ applicable agreement for further details.
 	(pt 960 936)
 )
 (connector
-	(text "inst_addi" (rect -512 -32 -469 -20)(font "Arial" ))
-	(pt -480 -16)
-	(pt -520 -16)
-)
-(connector
-	(text "inst_sw" (rect -520 192 -484 204)(font "Arial" ))
+	(text "inst_sw" (rect -536 192 -500 204)(font "Arial" ))
 	(pt -504 208)
 	(pt -528 208)
 )
@@ -5864,6 +5825,46 @@ applicable agreement for further details.
 	(pt 1808 80)
 	(bus)
 )
+(connector
+	(text "inst_lw" (rect 895 472 928 484)(font "Arial" ))
+	(pt 888 488)
+	(pt 960 488)
+)
+(connector
+	(text "inst_lw" (rect -512 -32 -479 -20)(font "Arial" ))
+	(pt -480 -16)
+	(pt -520 -16)
+)
+(connector
+	(text "nz_rs2" (rect 1734 304 1765 316)(font "Arial" ))
+	(pt 1720 320)
+	(pt 1752 320)
+)
+(connector
+	(text "rs2[0]" (rect 1576 256 1604 268)(font "Arial" ))
+	(pt 1568 272)
+	(pt 1616 272)
+)
+(connector
+	(text "rs2[2]" (rect 1576 288 1604 300)(font "Arial" ))
+	(pt 1568 304)
+	(pt 1616 304)
+)
+(connector
+	(text "rs2[1]" (rect 1576 272 1604 284)(font "Arial" ))
+	(pt 1568 288)
+	(pt 1616 288)
+)
+(connector
+	(text "rs2[4]" (rect 1576 320 1604 332)(font "Arial" ))
+	(pt 1568 336)
+	(pt 1616 336)
+)
+(connector
+	(text "rs2[3]" (rect 1576 304 1604 316)(font "Arial" ))
+	(pt 1568 320)
+	(pt 1616 320)
+)
 (junction (pt 56 1112))
 (junction (pt 56 1016))
 (text "was ld_done but read from memory is instant" (rect -112 288 145 302)(font "Arial" (font_size 8)))
@@ -5881,7 +5882,7 @@ applicable agreement for further details.
 (title_block
 	(rect 2112 -232 2480 -112)
 	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 12)(font "Arial" ))(text "UMami-s" (rect 56 2 132 20)(font "Arial" (font_size 12)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Tue Aug 25 23:21:24 2026" (rect 56 3 235 19)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Tue Aug 25 23:47:29 2026" (rect 56 3 235 19)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 59 12)(font "Arial" ))(text "ugoboss" (rect 56 2 126 20)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 49 12)(font "Arial" ))(text "1.00" (rect 56 1 85 17)(font "Arial" (font_size 10)))(border))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 12)(font "Arial" ))(text "1" (rect 34 4 42 20)(font "Arial" (font_size 10))))

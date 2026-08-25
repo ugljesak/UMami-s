@@ -72,7 +72,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 352 552 520 568)
+	(rect 184 552 352 568)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "sw" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 304 568 352 584))
+	(annotation_block (location)(rect 136 568 184 584))
 )
 (pin
 	(output)
@@ -744,6 +744,35 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 176 144))
 	)
 )
+(symbol
+	(rect 392 528 488 624)
+	(text "Debouncer" (rect 5 0 67 14)(font "Arial" (font_size 8)))
+	(text "inst5" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN" (rect 0 0 10 14)(font "Arial" (font_size 8)))
+		(text "IN" (rect 21 27 31 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "OUT" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "OUT" (rect 47 27 71 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
 (connector
 	(text "unitsH[0]" (rect 1240 544 1284 556)(font "Arial" ))
 	(pt 1232 560)
@@ -975,11 +1004,6 @@ applicable agreement for further details.
 	(pt 640 176)
 )
 (connector
-	(text "sw" (rect 672 176 684 188)(font "Arial" ))
-	(pt 696 192)
-	(pt 664 192)
-)
-(connector
 	(text "di[31..0]" (rect 888 176 928 188)(font "Arial" ))
 	(pt 888 192)
 	(pt 936 192)
@@ -994,11 +1018,6 @@ applicable agreement for further details.
 	(pt 888 240)
 	(pt 1088 240)
 	(bus)
-)
-(connector
-	(text "0" (rect 1056 208 1061 220)(font "Arial" ))
-	(pt 1088 224)
-	(pt 1048 224)
 )
 (connector
 	(text "CLK" (rect 1056 240 1077 252)(font "Arial" ))
@@ -1027,6 +1046,30 @@ applicable agreement for further details.
 	(pt 888 256)
 	(pt 944 256)
 	(bus)
+)
+(connector
+	(pt 352 560)
+	(pt 392 560)
+)
+(connector
+	(text "CLK" (rect 376 560 397 572)(font "Arial" ))
+	(pt 392 576)
+	(pt 368 576)
+)
+(connector
+	(text "READ" (rect 496 544 526 556)(font "Arial" ))
+	(pt 488 560)
+	(pt 536 560)
+)
+(connector
+	(text "READ" (rect 672 176 702 188)(font "Arial" ))
+	(pt 696 192)
+	(pt 664 192)
+)
+(connector
+	(text "RST" (rect 1056 208 1077 220)(font "Arial" ))
+	(pt 1088 224)
+	(pt 1048 224)
 )
 (text "HEX DISPLAY" (rect 616 816 695 830)(font "Arial" (font_size 8)))
 (rectangle (rect 600 488 1992 840))
