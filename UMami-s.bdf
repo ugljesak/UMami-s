@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect 352 552 520 568)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "sw" (rect 5 0 18 12)(font "Arial" ))
+	(text "sw" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -140,7 +140,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1448 200 1624 216)
+	(rect 1800 384 1976 400)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "debug[3..0]" (rect 90 0 145 12)(font "Arial" ))
 	(pt 0 8)
@@ -153,6 +153,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1976 400 2032 416))
 )
 (symbol
 	(rect 720 520 936 632)
@@ -1014,6 +1015,18 @@ applicable agreement for further details.
 	(text "LD" (rect 1056 192 1070 204)(font "Arial" ))
 	(pt 1088 208)
 	(pt 1048 208)
+)
+(connector
+	(text "PC[31..0]" (rect 896 144 943 156)(font "Arial" ))
+	(pt 888 160)
+	(pt 936 160)
+	(bus)
+)
+(connector
+	(text "debug[31..0]" (rect 896 240 957 252)(font "Arial" ))
+	(pt 888 256)
+	(pt 944 256)
+	(bus)
 )
 (text "HEX DISPLAY" (rect 616 816 695 830)(font "Arial" (font_size 8)))
 (rectangle (rect 600 488 1992 840))
