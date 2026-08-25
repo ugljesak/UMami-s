@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY PS2Mouse
+set_global_assignment -name TOP_LEVEL_ENTITY "UMami-s"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:50:52  JUNE 02, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -53,11 +53,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/TEMP/Desktop/AR/UMami-s/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_G21 -to CLK
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_D2 -to SW[9]
 set_location_assignment PIN_E4 -to SW[8]
@@ -142,7 +137,13 @@ set_location_assignment PIN_H13 -to unitsH[3]
 set_location_assignment PIN_H12 -to unitsH[2]
 set_location_assignment PIN_F11 -to unitsH[1]
 set_location_assignment PIN_E11 -to unitsH[0]
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+
+# ---- ALU i njena hijerarhija ----
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/ControlUnit"
 set_global_assignment -name SEARCH_PATH memory/
 set_global_assignment -name SEARCH_PATH core/components/alu
 set_global_assignment -name SEARCH_PATH reg_file
@@ -155,6 +156,33 @@ set_global_assignment -name SEARCH_PATH core/operationalunit
 set_global_assignment -name SEARCH_PATH core/controlunit
 set_global_assignment -name SEARCH_PATH core/registers
 set_global_assignment -name SEARCH_PATH core/components
+set_global_assignment -name SEARCH_PATH core/components/add
+set_global_assignment -name SEARCH_PATH core/components/sub
+set_global_assignment -name SEARCH_PATH core/components/logic
+set_global_assignment -name SEARCH_PATH core/components/shift
+set_global_assignment -name SEARCH_PATH core/components/cmp
+set_global_assignment -name SEARCH_PATH core/components/helpers
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name VHDL_FILE REG_FILE/RegFile32x32.vhd
+set_global_assignment -name MIF_FILE memory/ramInit.mif
+set_global_assignment -name MIF_FILE memory/romInit.mif
+set_global_assignment -name BDF_FILE core/Components/HELPERS/RisingEdge.bdf
+set_global_assignment -name BDF_FILE core/Components/MUX/MUX8_32.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/CMP32.bdf
+set_global_assignment -name BDF_FILE core/Components/MUX/MUX4_32.bdf
+set_global_assignment -name VHDL_FILE core/Components/MUX/MUX4_32New.vhd
+set_global_assignment -name QIP_FILE core/Components/MUX/MUX4_32New.qip
+set_global_assignment -name SOURCE_FILE core/Components/MUX/MUX4_32New.cmp
+set_global_assignment -name VHDL_FILE gpu/sdram_controller/SDRAM_CNTR_ROM.vhd
+set_global_assignment -name QIP_FILE gpu/sdram_controller/SDRAM_CNTR_ROM.qip
+set_global_assignment -name BDF_FILE gpu/sdram_controller/SDRAM_CNTR.bdf
+set_global_assignment -name QIP_FILE memory/MemoryController.qip
+set_global_assignment -name SOURCE_FILE memory/MemoryController.cmp
+set_global_assignment -name VHDL_FILE memory/MemoryController.vhd
+set_global_assignment -name SOURCE_FILE lpm_mux0.cmp
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name VHDL_FILE lpm_mux0.vhd
 set_global_assignment -name BDF_FILE core/Components/ALU/ALU32.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRDecoder.bdf
 set_global_assignment -name BDF_FILE REG_FILE/32xREG32_FILE.bdf
@@ -163,7 +191,6 @@ set_global_assignment -name BDF_FILE core/ControlUnit/BranchCondition.bdf
 set_global_assignment -name VHDL_FILE gpu/io_buffer.vhd
 set_global_assignment -name BDF_FILE Components/MUX/MUX8_1.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/Decoder.bdf
-set_global_assignment -name BDF_FILE Components/HELPERS/RisingEdge.bdf
 set_global_assignment -name VHDL_FILE TestUtils/SevenSegmentInterfaceDEC.vhd
 set_global_assignment -name VHDL_FILE TestUtils/CLK_DIVIDER.vhd
 set_global_assignment -name VHDL_FILE TestUtils/Binary2BCD.vhd
@@ -205,3 +232,42 @@ set_global_assignment -name BDF_FILE core/Registers/mstatus.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRWriteData.bdf
 set_global_assignment -name BDF_FILE gpu/sdram_test_files/sdram_test.bdf
 set_global_assignment -name QIP_FILE gpu/GPUPLL.qip
+set_global_assignment -name BDF_FILE core/Components/ALU.bdf
+set_global_assignment -name BDF_FILE core/Components/CMP/CMP32.bdf
+set_global_assignment -name BDF_FILE core/Components/SHIFT/SHIFT32.bdf
+set_global_assignment -name BDF_FILE core/Components/HELPERS/ZEXT1_32.bdf
+set_global_assignment -name BDF_FILE core/Components/MUX/MUX2_32.bdf
+set_global_assignment -name BDF_FILE core/Components/MUX/MUX16_32.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD32.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD16.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD8.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD4.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/ADD2.bdf
+set_global_assignment -name BDF_FILE core/Components/ADD/Add1.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB32.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB16.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB8.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB4.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB2.bdf
+set_global_assignment -name BDF_FILE core/Components/SUB/SUB1.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/XOR32.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/XOR16.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/XOR8.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR32.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR16.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR8B.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND32.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND16.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND8B.bdf
+set_global_assignment -name QIP_FILE REG_FILE/lpm_mux3.qip
+set_global_assignment -name BDF_FILE core/ControlUnit/ControlUnit.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR8.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/OR8Bit.bdf
+set_global_assignment -name BDF_FILE core/Components/LOGIC/AND8Bit.bdf
+set_global_assignment -name BDF_FILE core/Components/DC/DC4_16.bdf
+set_global_assignment -name BDF_FILE core/Components/DC/DC1_2.bdf
+set_global_assignment -name QIP_FILE memory/ROMController.qip
+set_global_assignment -name VHDL_FILE memory/ROMController.vhd
+set_global_assignment -name SOURCE_FILE memory/ROMController.cmp
+set_global_assignment -name QIP_FILE core/Components/MUX/MUX32_32.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
