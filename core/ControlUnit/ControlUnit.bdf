@@ -2281,16 +2281,6 @@ applicable agreement for further details.
 	(pt 1416 480)
 )
 (connector
-	(text "memWrite" (rect 1418 400 1468 412)(font "Arial" ))
-	(pt 1472 416)
-	(pt 1408 416)
-)
-(connector
-	(pt 1472 432)
-	(pt 1384 432)
-	(bus)
-)
-(connector
 	(text "imm[31..0]" (rect 1192 432 1245 444)(font "Arial" ))
 	(pt 1248 448)
 	(pt 1184 448)
@@ -2300,12 +2290,6 @@ applicable agreement for further details.
 	(text "rs1do[31..0]" (rect 1192 416 1251 428)(font "Arial" ))
 	(pt 1248 432)
 	(pt 1184 432)
-	(bus)
-)
-(connector
-	(text "store_rs2do[31..0]" (rect 1392 384 1481 396)(font "Arial" ))
-	(pt 1472 400)
-	(pt 1408 400)
 	(bus)
 )
 (connector
@@ -2401,5 +2385,21 @@ applicable agreement for further details.
 (connector
 	(pt 1504 1048)
 	(pt 2128 1048)
+	(bus)
+)
+(connector
+	(text "memWrite" (rect 1418 400 1468 412)(font "Arial" ))
+	(pt 1472 416)
+	(pt 1408 416)
+)
+(connector
+	(pt 1472 432)
+	(pt 1384 432)
+	(bus)
+)
+(connector
+	(text "store_rs2do[31..0]" (rect 1392 384 1481 396)(font "Arial" ))
+	(pt 1472 400)
+	(pt 1408 400)
 	(bus)
 )
