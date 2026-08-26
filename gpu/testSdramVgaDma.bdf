@@ -51,6 +51,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 8 88 64 104))
 )
 (pin
 	(output)
@@ -169,7 +170,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 3544 600 3608 616))
+	(annotation_block (location)(rect 2912 352 2976 368))
 )
 (pin
 	(output)
@@ -186,7 +187,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 3544 680 3600 696))
+	(annotation_block (location)(rect 2912 432 2968 448))
 )
 (pin
 	(output)
@@ -237,7 +238,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 3544 528 3608 544))
+	(annotation_block (location)(rect 2912 288 2976 296))
 )
 (pin
 	(output)
@@ -271,6 +272,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 2032 368 2088 384))
 )
 (pin
 	(output)
@@ -304,6 +306,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 2032 848 2088 864))
 )
 (pin
 	(output)
@@ -320,6 +323,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 2048 888 2104 904))
 )
 (pin
 	(output)
@@ -336,6 +340,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 2040 928 2096 944))
 )
 (pin
 	(bidir)
@@ -911,7 +916,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 480 536 528 568)
+	(rect 496 536 544 568)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst11" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -1039,7 +1044,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 800 536 848 568)
+	(rect 864 536 912 568)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst13" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -2400,19 +2405,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "nLine_done" (rect 529 536 584 548)(font "Arial" ))
-	(pt 528 552)
-	(pt 576 552)
-)
-(connector
 	(text "nIdx[0]" (rect 323 448 357 460)(font "Arial" ))
 	(pt 360 464)
 	(pt 312 464)
-)
-(connector
-	(text "line_done" (rect 432 536 478 548)(font "Arial" ))
-	(pt 424 552)
-	(pt 480 552)
 )
 (connector
 	(text "nIdx[1]" (rect 320 464 354 476)(font "Arial" ))
@@ -2512,11 +2507,6 @@ applicable agreement for further details.
 	(pt 736 376)
 )
 (connector
-	(text "CLK" (rect -24 240 -3 252)(font "Arial" ))
-	(pt 0 256)
-	(pt -24 256)
-)
-(connector
 	(text "dma1_req" (rect -48 256 0 268)(font "Arial" ))
 	(pt 0 272)
 	(pt -24 272)
@@ -2540,16 +2530,6 @@ applicable agreement for further details.
 	(text "dma2_grt" (rect 187 272 233 284)(font "Arial" ))
 	(pt 160 288)
 	(pt 208 288)
-)
-(connector
-	(text "nFrame_done" (rect 849 536 916 548)(font "Arial" ))
-	(pt 848 552)
-	(pt 896 552)
-)
-(connector
-	(text "frame_done" (rect 744 536 803 548)(font "Arial" ))
-	(pt 736 552)
-	(pt 800 552)
 )
 (connector
 	(text "frame_done" (rect 16 376 75 388)(font "Arial" ))
@@ -2813,12 +2793,6 @@ applicable agreement for further details.
 	(text "one" (rect 632 624 649 636)(font "Arial" ))
 	(pt 672 640)
 	(pt 624 640)
-)
-(connector
-	(text "onebus[15..0]" (rect -71 86 -59 153)(font "Arial" )(vertical))
-	(pt -56 120)
-	(pt -56 160)
-	(bus)
 )
 (connector
 	(text "zero" (rect 704 328 724 340)(font "Arial" ))
@@ -3193,12 +3167,6 @@ applicable agreement for further details.
 	(pt 312 160)
 )
 (connector
-	(text "onebus[7..0]" (rect 1768 672 1829 684)(font "Arial" ))
-	(pt 1760 688)
-	(pt 1840 688)
-	(bus)
-)
-(connector
 	(text "RED1_[15..0]" (rect 104 560 171 572)(font "Arial" ))
 	(pt 88 576)
 	(pt 112 576)
@@ -3243,6 +3211,43 @@ applicable agreement for further details.
 	(text "zero" (rect 352 96 364 116)(font "Arial" )(vertical))
 	(pt 368 129)
 	(pt 368 113)
+)
+(connector
+	(text "CLK" (rect -64 240 -43 252)(font "Arial" ))
+	(pt 0 256)
+	(pt -64 256)
+)
+(connector
+	(text "nLine_done" (rect 545 536 600 548)(font "Arial" ))
+	(pt 544 552)
+	(pt 592 552)
+)
+(connector
+	(text "line_done" (rect 448 536 494 548)(font "Arial" ))
+	(pt 424 552)
+	(pt 496 552)
+)
+(connector
+	(text "nFrame_done" (rect 913 536 980 548)(font "Arial" ))
+	(pt 912 552)
+	(pt 960 552)
+)
+(connector
+	(text "frame_done" (rect 808 536 867 548)(font "Arial" ))
+	(pt 736 552)
+	(pt 864 552)
+)
+(connector
+	(text "onebus[15..0]" (rect -71 118 -59 185)(font "Arial" )(vertical))
+	(pt -56 120)
+	(pt -56 192)
+	(bus)
+)
+(connector
+	(text "onebus[7..0]" (rect 1752 672 1813 684)(font "Arial" ))
+	(pt 1840 688)
+	(pt 1744 688)
+	(bus)
 )
 (text "BUTTON" (rect 16 72 64 86)(font "Arial" (font_size 8)))
 (text "HEX DISPLAY" (rect 1736 952 1815 966)(font "Arial" (font_size 8)))

@@ -875,18 +875,7 @@ applicable agreement for further details.
 	(pt 536 424)
 )
 (connector
-	(text "0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,1" (rect 216 392 363 404)(font "Arial" ))
-	(pt 232 408)
-	(pt 392 408)
-	(bus)
-)
-(connector
-	(pt 200 392)
-	(pt 392 392)
-	(bus)
-)
-(connector
-	(text "0,1,1,0,1,0,1,1,0,0,0" (rect 552 80 652 92)(font "Arial" ))
+	(text "0,1,1,0,1,0,1,1,0,0,0" (rect 528 80 628 92)(font "Arial" ))
 	(pt 576 96)
 	(pt 640 96)
 	(bus)
@@ -922,12 +911,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "0,1,1,1,1,0,0,1,1,1,1" (rect 552 -16 652 -4)(font "Arial" ))
-	(pt 576 0)
-	(pt 640 0)
-	(bus)
-)
-(connector
 	(text "Y[9..0]" (rect 600 304 634 316)(font "Arial" ))
 	(pt 648 320)
 	(pt 592 320)
@@ -956,24 +939,12 @@ applicable agreement for further details.
 	(pt 784 320)
 )
 (connector
-	(pt 744 208)
-	(pt 784 208)
-)
-(connector
 	(pt 784 320)
 	(pt 784 272)
 )
 (connector
 	(pt 784 272)
 	(pt 832 272)
-)
-(connector
-	(pt 784 256)
-	(pt 832 256)
-)
-(connector
-	(pt 784 208)
-	(pt 784 256)
 )
 (connector
 	(text "0" (rect -160 107 -148 112)(font "Arial" )(vertical))
@@ -1106,4 +1077,34 @@ applicable agreement for further details.
 	(text "eX" (rect 1048 368 1059 380)(font "Arial" ))
 	(pt 1096 384)
 	(pt 1040 384)
+)
+(connector
+	(text "Y[15..0]" (rect 256 376 296 388)(font "Arial" ))
+	(pt 200 392)
+	(pt 392 392)
+	(bus)
+)
+(connector
+	(text "0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,1" (rect 240 392 387 404)(font "Arial" ))
+	(pt 232 408)
+	(pt 392 408)
+	(bus)
+)
+(connector
+	(text "0,1,1,1,1,0,0,1,1,1,1" (rect 528 -16 628 -4)(font "Arial" ))
+	(pt 640 0)
+	(pt 544 0)
+	(bus)
+)
+(connector
+	(pt 832 256)
+	(pt 784 256)
+)
+(connector
+	(pt 784 256)
+	(pt 784 224)
+)
+(connector
+	(pt 744 224)
+	(pt 784 224)
 )
