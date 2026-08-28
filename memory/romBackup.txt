@@ -5,12 +5,10 @@ ADDRESS_RADIX = HEX;
 DATA_RADIX = HEX;
 
 CONTENT BEGIN
-    0 : 3E800193;   -- addi x3, x0, 1000
-    1 : 0041A083;   -- lw x1, 4(x3)
-    2 : 00208093;   -- addi x1,x1,2
-    3 : 001080B3;   -- add x1, x1, x1
-    4 : 00300113;   -- addi x2, x0, 3
-    5 : 402080B3;   -- sub x1, x1, x2
-    6 : 0011A423;   -- sw   x1, 8(x3)
-    7 : 0000006F;   -- loop: jal x0, 0
-END;
+    0 : 00000000;
+    1 : 3E800193;   -- addi x3, x0, 1000   x3 = 250
+    2 : 00C1A083;   -- lw   x1, C(x3)     x1 = MEM[253]
+    3 : 00208093;   -- addi x1,x1,2
+    4 : 0011A423;   -- sw   x1, 8(x3)    MEM[252] = x1
+    5 : 0000006F;   -- loop: jal x0, 0
+END; 

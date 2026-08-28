@@ -13,13 +13,11 @@
 --applicable agreement for further details.
 
 
-component ROMController
+component MUL32U
 	PORT
 	(
-		address		: IN STD_LOGIC_VECTOR (10 DOWNTO 0);
-		addressstall_a		: IN STD_LOGIC  := '0';
-		clock		: IN STD_LOGIC  := '1';
-		rden		: IN STD_LOGIC  := '1';
-		q		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+		dataa		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		datab		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		result		: OUT STD_LOGIC_VECTOR (63 DOWNTO 0)
 	);
 end component;
