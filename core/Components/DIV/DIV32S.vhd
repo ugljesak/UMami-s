@@ -84,7 +84,7 @@ BEGIN
 	LPM_DIVIDE_component : LPM_DIVIDE
 	GENERIC MAP (
 		lpm_drepresentation => "SIGNED",
-		lpm_hint => "MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=TRUE",
+		lpm_hint => "MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=FALSE",
 		lpm_nrepresentation => "SIGNED",
 		lpm_pipeline => 8,
 		lpm_type => "LPM_DIVIDE",
@@ -107,7 +107,7 @@ END SYN;
 -- CNX file retrieval info
 -- ============================================================
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone III"
--- Retrieval info: PRIVATE: PRIVATE_LPM_REMAINDERPOSITIVE STRING "TRUE"
+-- Retrieval info: PRIVATE: PRIVATE_LPM_REMAINDERPOSITIVE STRING "FALSE"
 -- Retrieval info: PRIVATE: PRIVATE_MAXIMIZE_SPEED NUMERIC "6"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: USING_PIPELINE NUMERIC "1"
@@ -115,7 +115,7 @@ END SYN;
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_DREPRESENTATION STRING "SIGNED"
--- Retrieval info: CONSTANT: LPM_HINT STRING "MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=TRUE"
+-- Retrieval info: CONSTANT: LPM_HINT STRING "MAXIMIZE_SPEED=6,LPM_REMAINDERPOSITIVE=FALSE"
 -- Retrieval info: CONSTANT: LPM_NREPRESENTATION STRING "SIGNED"
 -- Retrieval info: CONSTANT: LPM_PIPELINE NUMERIC "8"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_DIVIDE"

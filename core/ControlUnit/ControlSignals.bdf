@@ -2574,7 +2574,7 @@ applicable agreement for further details.
 	(pt 296 480)
 )
 (connector
-	(text "inst_lw" (rect 288 480 321 492)(font "Arial" ))
+	(text "inst_lw" (rect 304 480 337 492)(font "Arial" ))
 	(pt 344 496)
 	(pt 296 496)
 )
