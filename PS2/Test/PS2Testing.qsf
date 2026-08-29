@@ -1,0 +1,166 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 23:58:00  August 12, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PS2Testing_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY PS2Test
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:58:00  AUGUST 12, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_J6 -to SW[0]
+set_location_assignment PIN_H5 -to SW[1]
+set_location_assignment PIN_H6 -to SW[2]
+set_location_assignment PIN_G4 -to SW[3]
+set_location_assignment PIN_G5 -to SW[4]
+set_location_assignment PIN_J7 -to SW[5]
+set_location_assignment PIN_H7 -to SW[6]
+set_location_assignment PIN_E3 -to SW[7]
+set_location_assignment PIN_E4 -to SW[8]
+set_location_assignment PIN_D2 -to SW[9]
+set_location_assignment PIN_J1 -to LED[0]
+set_location_assignment PIN_J2 -to LED[1]
+set_location_assignment PIN_J3 -to LED[2]
+set_location_assignment PIN_H1 -to LED[3]
+set_location_assignment PIN_F2 -to LED[4]
+set_location_assignment PIN_E1 -to LED[5]
+set_location_assignment PIN_C1 -to LED[6]
+set_location_assignment PIN_C2 -to LED[7]
+set_location_assignment PIN_B2 -to LED[8]
+set_location_assignment PIN_B1 -to LED[9]
+set_location_assignment PIN_E11 -to HEXA[0]
+set_location_assignment PIN_F11 -to HEXA[1]
+set_location_assignment PIN_H12 -to HEXA[2]
+set_location_assignment PIN_H13 -to HEXA[3]
+set_location_assignment PIN_G12 -to HEXA[4]
+set_location_assignment PIN_F12 -to HEXA[5]
+set_location_assignment PIN_F13 -to HEXA[6]
+set_location_assignment PIN_A13 -to HEXB[0]
+set_location_assignment PIN_B13 -to HEXB[1]
+set_location_assignment PIN_C13 -to HEXB[2]
+set_location_assignment PIN_A14 -to HEXB[3]
+set_location_assignment PIN_B14 -to HEXB[4]
+set_location_assignment PIN_E14 -to HEXB[5]
+set_location_assignment PIN_A15 -to HEXB[6]
+set_location_assignment PIN_D15 -to HEXC[0]
+set_location_assignment PIN_A16 -to HEXC[1]
+set_location_assignment PIN_B16 -to HEXC[2]
+set_location_assignment PIN_E15 -to HEXC[3]
+set_location_assignment PIN_A17 -to HEXC[4]
+set_location_assignment PIN_B17 -to HEXC[5]
+set_location_assignment PIN_F14 -to HEXC[6]
+set_location_assignment PIN_P22 -to PS2CLK
+set_location_assignment PIN_P21 -to PS2Data
+set_location_assignment PIN_G21 -to CLK
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_location_assignment PIN_H2 -to BTN0
+set_location_assignment PIN_G3 -to BTN1
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/COMP"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/MUX"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/HELPERS"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/ADD"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL_INC"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL_INC_DEC"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/Components/REG/LD_CL"
+set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/TestUtils"
+set_global_assignment -name BDF_FILE ../../core/Components/HELPERS/RisingEdge.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/HELPERS/FallingEdge.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/HELPERS/EdgeDetector.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/HELPERS/DebouncerShort.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/HELPERS/Debouncer.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC/REG32_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC/REG16_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC/REG4_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC/REG1_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL/REG32_LD_CL.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL/REG16_LD_CL.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL/REG8_LD_CL.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL/REG4_LD_CL.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL/REG1_LD_CL.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC_DEC/REG32_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC_DEC/REG16_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC_DEC/REG8_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC_DEC/REG4_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/REG/LD_CL_INC_DEC/REG1_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator32.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator16.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator11.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator10.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator8.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator4.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator2.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/COMP/Comparator1.bdf
+set_global_assignment -name VHDL_FILE ../PS2MouseController.vhd
+set_global_assignment -name BDF_FILE ../PS2Mouse.bdf
+set_global_assignment -name BDF_FILE PS2Test.bdf
+set_global_assignment -name QIP_FILE ../../Components/MUX/MUX2_1.qip
+set_global_assignment -name BDF_FILE ../MySRFF.bdf
+set_global_assignment -name QIP_FILE ../../core/Components/MUX/MUX4_32New.qip
+set_global_assignment -name BDF_FILE ../../core/Components/ADD/ADD32.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/ADD/ADD16.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/ADD/ADD8.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/ADD/ADD4.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/ADD/ADD2.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/ADD/Add1.bdf
+set_global_assignment -name VHDL_FILE ../../TestUtils/SevenSegmentInterfaceDEC.vhd
+set_global_assignment -name VHDL_FILE ../../TestUtils/CLK_DIVIDER.vhd
+set_global_assignment -name VHDL_FILE ../../TestUtils/Binary2BCD.vhd
+set_global_assignment -name VHDL_FILE ../../core/Components/MUX/MUX32_32.vhd
+set_global_assignment -name BDF_FILE ../../core/Components/MUX/MUX16_32.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/MUX/MUX8_32.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/MUX/MUX8_1.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/MUX/MUX4_32.bdf
+set_global_assignment -name BDF_FILE ../../core/Components/MUX/MUX2_32.bdf
+set_global_assignment -name VHDL_FILE ../../core/Components/MUX/MUX2_16.vhd
+set_global_assignment -name VHDL_FILE ../../core/Components/MUX/MUX2_8.vhd
+set_global_assignment -name VHDL_FILE ../../core/Components/MUX/MUX2_1.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -754,11 +754,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "zero" (rect 328 122 348 134)(font "Arial" ))
-	(pt 360 136)
-	(pt 328 136)
-)
-(connector
 	(text "a[31..0]" (rect 328 202 365 214)(font "Arial" ))
 	(pt 360 216)
 	(pt 328 216)
@@ -769,11 +764,6 @@ applicable agreement for further details.
 	(pt 360 232)
 	(pt 328 232)
 	(bus)
-)
-(connector
-	(text "zero" (rect 328 234 348 246)(font "Arial" ))
-	(pt 360 248)
-	(pt 328 248)
 )
 (connector
 	(text "a[31..0]" (rect 328 314 365 326)(font "Arial" ))
@@ -1019,11 +1009,6 @@ applicable agreement for further details.
 	(pt 1264 168)
 )
 (connector
-	(text "EQ" (rect 1264 186 1279 198)(font "Arial" ))
-	(pt 1296 200)
-	(pt 1264 200)
-)
-(connector
 	(text "lss" (rect 1264 218 1278 230)(font "Arial" ))
 	(pt 1296 232)
 	(pt 1264 232)
@@ -1062,18 +1047,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "zero[31..0]" (rect 944 152 995 164)(font "Arial" ))
-	(pt 1016 168)
-	(pt 936 168)
-	(bus)
-)
-(connector
-	(text "zero[31..0]" (rect 944 168 995 180)(font "Arial" ))
-	(pt 1016 184)
-	(pt 936 184)
-	(bus)
-)
-(connector
 	(pt 64 256)
 	(pt 64 240)
 	(bus)
@@ -1082,5 +1055,32 @@ applicable agreement for further details.
 	(text "zero[31..0]" (rect 75 224 126 236)(font "Arial" ))
 	(pt 64 240)
 	(pt 80 240)
+	(bus)
+)
+(connector
+	(text "zero[0]" (rect 328 234 361 246)(font "Arial" ))
+	(pt 360 248)
+	(pt 328 248)
+)
+(connector
+	(text "zero[0]" (rect 328 122 361 134)(font "Arial" ))
+	(pt 360 136)
+	(pt 328 136)
+)
+(connector
+	(text "eql" (rect 1264 186 1278 198)(font "Arial" ))
+	(pt 1296 200)
+	(pt 1264 200)
+)
+(connector
+	(text "zero[31..1],lss" (rect 944 152 1013 164)(font "Arial" ))
+	(pt 1016 168)
+	(pt 936 168)
+	(bus)
+)
+(connector
+	(text "zero[31..1],lssu" (rect 944 168 1019 180)(font "Arial" ))
+	(pt 1016 184)
+	(pt 936 184)
 	(bus)
 )
