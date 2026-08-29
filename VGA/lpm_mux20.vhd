@@ -4,7 +4,7 @@
 -- MODULE: LPM_MUX 
 
 -- ============================================================
--- File Name: lpm_mux1.vhd
+-- File Name: lpm_mux20.vhd
 -- Megafunction Name(s):
 -- 			LPM_MUX
 --
@@ -39,7 +39,7 @@ USE ieee.std_logic_1164.all;
 LIBRARY lpm;
 USE lpm.lpm_components.all;
 
-ENTITY lpm_mux1 IS
+ENTITY lpm_mux20 IS
 	PORT
 	(
 		data0x		: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
@@ -53,10 +53,10 @@ ENTITY lpm_mux1 IS
 		sel		: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
 		result		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
 	);
-END lpm_mux1;
+END lpm_mux20;
 
 
-ARCHITECTURE SYN OF lpm_mux1 IS
+ARCHITECTURE SYN OF lpm_mux20 IS
 
 --	type STD_LOGIC_2D is array (NATURAL RANGE <>, NATURAL RANGE <>) of STD_LOGIC;
 
@@ -162,9 +162,9 @@ END SYN;
 -- Retrieval info: CONNECT: @data 1 7 4 0 data7x 0 0 4 0
 -- Retrieval info: CONNECT: @sel 0 0 3 0 sel 0 0 3 0
 -- Retrieval info: CONNECT: result 0 0 4 0 @result 0 0 4 0
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux1.vhd TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux1.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux1.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux1.bsf TRUE FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux1_inst.vhd FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux20.vhd TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux20.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux20.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux20.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux20_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

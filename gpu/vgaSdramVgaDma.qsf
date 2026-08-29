@@ -1,0 +1,197 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 00:57:58  August 26, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		vgaSdramVgaDma_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY testSdramVgaDma
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:57:58  AUGUST 26, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_A7 -to ADDR[11]
+set_location_assignment PIN_B4 -to ADDR[10]
+set_location_assignment PIN_B7 -to ADDR[9]
+set_location_assignment PIN_C7 -to ADDR[8]
+set_location_assignment PIN_A6 -to ADDR[7]
+set_location_assignment PIN_B6 -to ADDR[6]
+set_location_assignment PIN_C6 -to ADDR[5]
+set_location_assignment PIN_A5 -to ADDR[4]
+set_location_assignment PIN_C3 -to ADDR[3]
+set_location_assignment PIN_B3 -to ADDR[2]
+set_location_assignment PIN_A3 -to ADDR[1]
+set_location_assignment PIN_A4 -to ba[1]
+set_location_assignment PIN_B5 -to ba[0]
+set_location_assignment PIN_K18 -to BLUE[3]
+set_location_assignment PIN_J22 -to BLUE[2]
+set_location_assignment PIN_K21 -to BLUE[1]
+set_location_assignment PIN_K22 -to BLUE[0]
+set_location_assignment PIN_G8 -to CAS
+set_location_assignment PIN_E6 -to CKE
+set_location_assignment PIN_C4 -to ADDR[0]
+set_location_assignment PIN_G21 -to CLK
+set_location_assignment PIN_G7 -to CS
+set_location_assignment PIN_B8 -to DQM[1]
+set_location_assignment PIN_E7 -to DQM[0]
+set_location_assignment PIN_E5 -to DRAM_CLK
+set_location_assignment PIN_F10 -to DRAM_DQ[15]
+set_location_assignment PIN_E10 -to DRAM_DQ[14]
+set_location_assignment PIN_A10 -to DRAM_DQ[13]
+set_location_assignment PIN_B10 -to DRAM_DQ[12]
+set_location_assignment PIN_C10 -to DRAM_DQ[11]
+set_location_assignment PIN_A9 -to DRAM_DQ[10]
+set_location_assignment PIN_B9 -to DRAM_DQ[9]
+set_location_assignment PIN_A8 -to DRAM_DQ[8]
+set_location_assignment PIN_F8 -to DRAM_DQ[7]
+set_location_assignment PIN_H9 -to DRAM_DQ[6]
+set_location_assignment PIN_G9 -to DRAM_DQ[5]
+set_location_assignment PIN_F9 -to DRAM_DQ[4]
+set_location_assignment PIN_E9 -to DRAM_DQ[3]
+set_location_assignment PIN_H10 -to DRAM_DQ[2]
+set_location_assignment PIN_G10 -to DRAM_DQ[1]
+set_location_assignment PIN_D10 -to DRAM_DQ[0]
+set_location_assignment PIN_J21 -to GREEN[3]
+set_location_assignment PIN_K17 -to GREEN[2]
+set_location_assignment PIN_J17 -to GREEN[1]
+set_location_assignment PIN_H22 -to GREEN[0]
+set_location_assignment PIN_L21 -to HS
+set_location_assignment PIN_F7 -to RAS
+set_location_assignment PIN_H21 -to RED[3]
+set_location_assignment PIN_H20 -to RED[2]
+set_location_assignment PIN_H17 -to RED[1]
+set_location_assignment PIN_H19 -to RED[0]
+set_location_assignment PIN_H2 -to RST
+set_location_assignment PIN_A15 -to tensH[6]
+set_location_assignment PIN_E14 -to tensH[5]
+set_location_assignment PIN_B14 -to tensH[4]
+set_location_assignment PIN_A14 -to tensH[3]
+set_location_assignment PIN_C13 -to tensH[2]
+set_location_assignment PIN_B13 -to tensH[1]
+set_location_assignment PIN_A13 -to tensH[0]
+set_location_assignment PIN_F13 -to unitsH[6]
+set_location_assignment PIN_F12 -to unitsH[5]
+set_location_assignment PIN_G12 -to unitsH[4]
+set_location_assignment PIN_H13 -to unitsH[3]
+set_location_assignment PIN_H12 -to unitsH[2]
+set_location_assignment PIN_F11 -to unitsH[1]
+set_location_assignment PIN_E11 -to unitsH[0]
+set_location_assignment PIN_L22 -to VS
+set_location_assignment PIN_D6 -to WE
+set_global_assignment -name BDF_FILE ../core/Components/MUX/MUX8_1.bdf
+set_global_assignment -name SOURCE_FILE components/lpm_mux2.cmp
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator32.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator16.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator11.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator10.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator8.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator4.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator2.bdf
+set_global_assignment -name BDF_FILE ../core/Components/COMP/Comparator1.bdf
+set_global_assignment -name VHDL_FILE ../TestUtils/SevenSegmentInterfaceDEC.vhd
+set_global_assignment -name VHDL_FILE ../TestUtils/CLK_DIVIDER.vhd
+set_global_assignment -name VHDL_FILE ../TestUtils/Binary2BCD.vhd
+set_global_assignment -name BDF_FILE testSdramVgaDma.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC_DEC/REG32_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC_DEC/REG16_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC_DEC/REG8_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC_DEC/REG4_LD_CL_INC_DEC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC_DEC/REG1_LD_CL_INC_DEC.bdf
+set_global_assignment -name VHDL_FILE components/GPUPLL.vhd
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC/REG32_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC/REG16_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC/REG4_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE ../core/Components/REG/LD_CL_INC/REG1_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE components/arbitar.bdf
+set_global_assignment -name BDF_FILE dma/scanoutDMA.bdf
+set_global_assignment -name BDF_FILE sdram_controller/SDRAM_CNTR.bdf
+set_global_assignment -name VHDL_FILE components/lpm_mux30.vhd
+set_global_assignment -name VHDL_FILE components/lpm_mux10.vhd
+set_global_assignment -name VHDL_FILE ../core/Components/MUX/MUX2_1.vhd
+set_global_assignment -name SOURCE_FILE ../VGA/lpm_mux20.cmp
+set_global_assignment -name VHDL_FILE components/lpm_mux0.vhd
+set_global_assignment -name VHDL_FILE components/io_buffer.vhd
+set_global_assignment -name VHDL_FILE ../VGA/ram2port.vhd
+set_global_assignment -name VHDL_FILE ../VGA/mux2_1_16bitova.vhd
+set_global_assignment -name BDF_FILE ../VGA/Monitor.bdf
+set_global_assignment -name VHDL_FILE ../VGA/lpm_mux20.vhd
+set_global_assignment -name VHDL_FILE ../VGA/lpm_mux1.vhd
+set_global_assignment -name VHDL_FILE sdram_controller/SDRAM_CNTR_ROM.vhd
+set_global_assignment -name SOURCE_FILE ../VGA/ram2port.cmp
+set_global_assignment -name SOURCE_FILE ../VGA/mux2_1_16bitova.cmp
+set_global_assignment -name SOURCE_FILE ../VGA/lpm_mux1.cmp
+set_global_assignment -name BDF_FILE ../VGA/Filler.bdf
+set_global_assignment -name BDF_FILE ../VGA/Controller.bdf
+set_global_assignment -name VHDL_FILE components/lpm_mux2.vhd
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_J1 -to LED_fill_done
+set_global_assignment -name SEARCH_PATH "c:\\users\\ri240305d\\desktop\\umami-s"
+set_global_assignment -name SEARCH_PATH "c:\\users\\ri240305d\\desktop\\umami-s\\testutils"
+set_global_assignment -name SEARCH_PATH "c:\\users\\ri240305d\\desktop\\umami-s\\core\\components\\add"
+set_global_assignment -name SEARCH_PATH "c:\\users\\ri240305d\\desktop\\umami-s\\vga"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\testutils"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\vga"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\core\\components\\mux"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\core\\components\\reg\\ld_cl_inc"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\core\\components\\reg\\ld_cl_inc_dec"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\gpu\\sdram_controller"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\gpu\\dma"
+set_global_assignment -name SEARCH_PATH "c:\\users\\temp\\desktop\\umami-s\\gpu\\components"
+set_location_assignment PIN_F14 -to hundH[6]
+set_location_assignment PIN_B17 -to hundH[5]
+set_location_assignment PIN_A17 -to hundH[4]
+set_location_assignment PIN_E15 -to hundH[3]
+set_location_assignment PIN_B16 -to hundH[2]
+set_location_assignment PIN_A16 -to hundH[1]
+set_location_assignment PIN_D15 -to hundH[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
