@@ -118,6 +118,8 @@ set_location_assignment PIN_C2 -to debug[7]
 set_location_assignment PIN_C1 -to debug[6]
 set_location_assignment PIN_E1 -to debug[5]
 set_location_assignment PIN_F2 -to debug[4]
+set_global_assignment -name BDF_FILE PS2/PS2Mouse.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator16.bdf
 set_global_assignment -name BDF_FILE core/Components/MUL/MUL32.bdf
 set_global_assignment -name BDF_FILE core/Components/REG/LD_CL_INC/REG4_LD_CL_INC.bdf
 set_global_assignment -name BDF_FILE PS2/MySRFF.bdf
@@ -241,4 +243,13 @@ set_global_assignment -name BDF_FILE core/Components/ALU/MULDIVALU.bdf
 set_global_assignment -name QIP_FILE core/Components/DIV/DIV32S.qip
 set_global_assignment -name QIP_FILE core/Components/MUX/MUX4_4.qip
 set_global_assignment -name QIP_FILE core/Components/MUX/MUX4_13.qip
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator32.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator11.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator10.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator8.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator4.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator2.bdf
+set_global_assignment -name BDF_FILE core/Components/COMP/Comparator1.bdf
+set_location_assignment PIN_P22 -to PS2CLK
+set_location_assignment PIN_P21 -to PS2Data
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

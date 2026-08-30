@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 208 912)
+	(rect 16 16 208 944)
 	(text "ControlSignals" (rect 5 0 86 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 880 25 892)(font "Arial" ))
+	(text "inst" (rect 8 912 25 924)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -395,6 +395,20 @@ applicable agreement for further details.
 		(line (pt 0 864)(pt 16 864))
 	)
 	(port
+		(pt 0 880)
+		(input)
+		(text "inst_ppxl" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "inst_ppxl" (rect 21 875 71 889)(font "Arial" (font_size 8)))
+		(line (pt 0 880)(pt 16 880))
+	)
+	(port
+		(pt 0 896)
+		(input)
+		(text "inst_pbr" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "inst_pbr" (rect 21 891 67 905)(font "Arial" (font_size 8)))
+		(line (pt 0 896)(pt 16 896))
+	)
+	(port
 		(pt 192 32)
 		(output)
 		(text "RegWrite" (rect 0 0 51 14)(font "Arial" (font_size 8)))
@@ -493,6 +507,6 @@ applicable agreement for further details.
 		(line (pt 192 240)(pt 176 240)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 176 880))
+		(rectangle (rect 16 16 176 912))
 	)
 )
