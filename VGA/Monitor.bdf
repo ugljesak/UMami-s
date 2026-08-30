@@ -776,7 +776,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -232 288 -64 448)
+	(rect -232 296 -64 456)
 	(text "Controller" (rect 5 0 59 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -922,7 +922,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -24 400 24 432)
+	(rect -16 416 32 448)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -1164,53 +1164,6 @@ applicable agreement for further details.
 	(pt -96 192)
 )
 (connector
-	(text "CLK" (rect -296 304 -275 316)(font "Arial" ))
-	(pt -232 320)
-	(pt -304 320)
-)
-(connector
-	(text "VS" (rect -56 320 -42 332)(font "Arial" ))
-	(pt -64 336)
-	(pt -8 336)
-)
-(connector
-	(text "HS" (rect -56 304 -41 316)(font "Arial" ))
-	(pt -64 320)
-	(pt -8 320)
-)
-(connector
-	(text "display" (rect -56 384 -21 396)(font "Arial" ))
-	(pt -64 400)
-	(pt -8 400)
-)
-(connector
-	(text "pulse" (rect -56 368 -31 380)(font "Arial" ))
-	(pt -64 384)
-	(pt -8 384)
-)
-(connector
-	(text "Y[9..0]" (rect -56 352 -22 364)(font "Arial" ))
-	(pt -64 368)
-	(pt -8 368)
-	(bus)
-)
-(connector
-	(text "X[9..0]" (rect -56 336 -25 348)(font "Arial" ))
-	(pt -64 352)
-	(pt -8 352)
-	(bus)
-)
-(connector
-	(text "vactive" (rect -56 400 -19 412)(font "Arial" ))
-	(pt -64 416)
-	(pt -24 416)
-)
-(connector
-	(text "nVactive" (rect 32 400 75 412)(font "Arial" ))
-	(pt 24 416)
-	(pt 56 416)
-)
-(connector
 	(text "CLK" (rect 576 528 597 540)(font "Arial" ))
 	(pt 568 544)
 	(pt 608 544)
@@ -1229,4 +1182,59 @@ applicable agreement for further details.
 	(text "nVactive" (rect 712 528 755 540)(font "Arial" ))
 	(pt 720 544)
 	(pt 760 544)
+)
+(connector
+	(text "CLK" (rect -296 312 -275 324)(font "Arial" ))
+	(pt -232 328)
+	(pt -304 328)
+)
+(connector
+	(text "VS" (rect -56 328 -42 340)(font "Arial" ))
+	(pt -64 344)
+	(pt -8 344)
+)
+(connector
+	(text "HS" (rect -56 312 -41 324)(font "Arial" ))
+	(pt -64 328)
+	(pt -8 328)
+)
+(connector
+	(text "display" (rect -56 392 -21 404)(font "Arial" ))
+	(pt -64 408)
+	(pt -8 408)
+)
+(connector
+	(text "pulse" (rect -56 376 -31 388)(font "Arial" ))
+	(pt -64 392)
+	(pt -8 392)
+)
+(connector
+	(text "Y[9..0]" (rect -56 360 -22 372)(font "Arial" ))
+	(pt -64 376)
+	(pt -8 376)
+	(bus)
+)
+(connector
+	(text "X[9..0]" (rect -56 344 -25 356)(font "Arial" ))
+	(pt -64 360)
+	(pt -8 360)
+	(bus)
+)
+(connector
+	(text "vactive" (rect -56 408 -19 420)(font "Arial" ))
+	(pt -56 424)
+	(pt -64 424)
+)
+(connector
+	(text "nVactive" (rect 40 416 83 428)(font "Arial" ))
+	(pt 32 432)
+	(pt 64 432)
+)
+(connector
+	(pt -56 424)
+	(pt -56 432)
+)
+(connector
+	(pt -56 432)
+	(pt -16 432)
 )
