@@ -758,12 +758,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "address[8..0]" (rect 848 224 912 236)(font "Arial" ))
-	(pt 920 240)
-	(pt 840 240)
-	(bus)
-)
-(connector
 	(text "not_done" (rect 280 80 324 92)(font "Arial" ))
 	(pt 320 96)
 	(pt 272 96)
@@ -837,12 +831,6 @@ applicable agreement for further details.
 	(pt 472 184)
 )
 (connector
-	(text "address[9..0]" (rect 264 296 328 308)(font "Arial" ))
-	(pt 256 312)
-	(pt 360 312)
-	(bus)
-)
-(connector
 	(text "not_done" (rect 576 328 620 340)(font "Arial" ))
 	(pt 568 344)
 	(pt 632 344)
@@ -867,12 +855,6 @@ applicable agreement for further details.
 	(text "sdram_valid" (rect 792 280 852 292)(font "Arial" ))
 	(pt 848 296)
 	(pt 808 296)
-)
-(connector
-	(text "address[15..0]" (rect 432 440 502 452)(font "Arial" ))
-	(pt 424 456)
-	(pt 464 456)
-	(bus)
 )
 (connector
 	(text "0" (rect 232 440 237 452)(font "Arial" ))
@@ -922,24 +904,6 @@ applicable agreement for further details.
 	(pt 176 504)
 )
 (connector
-	(text "0,1,0,0,1,1,1,1,1,1" (rect 264 312 354 324)(font "Arial" ))
-	(pt 256 328)
-	(pt 360 328)
-	(bus)
-)
-(connector
-	(text "0,0,0,0,0,0,0,0,Y[8..1]" (rect 464 0 573 12)(font "Arial" ))
-	(pt 592 16)
-	(pt 456 16)
-	(bus)
-)
-(connector
-	(text "line_reg[15..0]" (rect 802 432 871 444)(font "Arial" ))
-	(pt 792 448)
-	(pt 840 448)
-	(bus)
-)
-(connector
 	(text "start" (rect 616 432 638 444)(font "Arial" ))
 	(pt 608 448)
 	(pt 648 448)
@@ -966,8 +930,49 @@ applicable agreement for further details.
 	(pt 648 528)
 )
 (connector
-	(text "0,0,0,0,0,line_reg[7..0],address[8..0]" (rect 730 136 909 148)(font "Arial" ))
+	(text "0,0,0,0,0,0,0,Y[9..1]" (rect 464 0 564 12)(font "Arial" ))
+	(pt 592 16)
+	(pt 456 16)
+	(bus)
+)
+(connector
+	(text "0" (rect 624 496 629 508)(font "Arial" ))
+	(pt 648 512)
+	(pt 616 512)
+)
+(connector
+	(text "0,0,1,1,0,0,0,1,1,1" (rect 264 312 354 324)(font "Arial" ))
+	(pt 256 328)
+	(pt 360 328)
+	(bus)
+)
+(connector
+	(text "0,0,0,0,0,line[7..0],addr[8..0]" (rect 730 136 870 148)(font "Arial" ))
 	(pt 808 152)
 	(pt 896 152)
+	(bus)
+)
+(connector
+	(text "line[15..0]" (rect 802 432 850 444)(font "Arial" ))
+	(pt 792 448)
+	(pt 840 448)
+	(bus)
+)
+(connector
+	(text "addr[15..0]" (rect 432 440 485 452)(font "Arial" ))
+	(pt 424 456)
+	(pt 464 456)
+	(bus)
+)
+(connector
+	(text "addr[9..0]" (rect 264 296 311 308)(font "Arial" ))
+	(pt 256 312)
+	(pt 360 312)
+	(bus)
+)
+(connector
+	(text "addr[8..0]" (rect 848 224 895 236)(font "Arial" ))
+	(pt 920 240)
+	(pt 840 240)
 	(bus)
 )

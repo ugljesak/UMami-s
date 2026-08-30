@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 184 176)
+	(rect 16 16 184 208)
 	(text "Controller" (rect 5 0 59 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -79,7 +79,21 @@ applicable agreement for further details.
 		(text "vactive" (rect 106 123 147 137)(font "Arial" (font_size 8)))
 		(line (pt 168 128)(pt 152 128))
 	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "eX" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "eX" (rect 132 139 147 153)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "eY" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "eY" (rect 131 155 147 169)(font "Arial" (font_size 8)))
+		(line (pt 168 160)(pt 152 160))
+	)
 	(drawing
-		(rectangle (rect 16 16 152 144))
+		(rectangle (rect 16 16 152 176))
 	)
 )
