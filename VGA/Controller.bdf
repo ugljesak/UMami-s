@@ -1316,19 +1316,9 @@ applicable agreement for further details.
 	(pt 88 200)
 )
 (connector
-	(text "eX" (rect -64 176 -53 188)(font "Arial" ))
-	(pt -32 192)
-	(pt -72 192)
-)
-(connector
 	(text "pixel" (rect 48 168 70 180)(font "Arial" ))
 	(pt 32 184)
 	(pt 88 184)
-)
-(connector
-	(text "pixel" (rect -64 192 -42 204)(font "Arial" ))
-	(pt -32 208)
-	(pt -72 208)
 )
 (connector
 	(text "eX" (rect -248 360 -237 372)(font "Arial" ))
@@ -1374,7 +1364,7 @@ applicable agreement for further details.
 	(pt 48 472)
 )
 (connector
-	(text "eX" (rect -128 488 -117 500)(font "Arial" ))
+	(text "eX" (rect -136 488 -125 500)(font "Arial" ))
 	(pt -152 504)
 	(pt -112 504)
 )
@@ -1443,4 +1433,14 @@ applicable agreement for further details.
 	(text "pixel_div2" (rect -16 576 33 588)(font "Arial" ))
 	(pt -24 592)
 	(pt 24 592)
+)
+(connector
+	(text "eX" (rect -64 176 -53 188)(font "Arial" ))
+	(pt -32 192)
+	(pt -72 192)
+)
+(connector
+	(text "pixel" (rect -64 192 -42 204)(font "Arial" ))
+	(pt -32 208)
+	(pt -72 208)
 )
