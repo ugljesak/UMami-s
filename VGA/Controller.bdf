@@ -1060,6 +1060,21 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 80 80))
 	)
 )
+(symbol
+	(rect -72 448 -40 464)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 5 32 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(text "X[10..0]" (rect 584 64 621 76)(font "Arial" ))
 	(pt 576 80)
@@ -1306,11 +1321,6 @@ applicable agreement for further details.
 	(pt -72 192)
 )
 (connector
-	(text "pixel" (rect -16 576 6 588)(font "Arial" ))
-	(pt -24 592)
-	(pt 24 592)
-)
-(connector
 	(text "pixel" (rect 48 168 70 180)(font "Arial" ))
 	(pt 32 184)
 	(pt 88 184)
@@ -1386,11 +1396,6 @@ applicable agreement for further details.
 	(pt -48 512)
 )
 (connector
-	(text "pixel" (rect -48 472 -26 484)(font "Arial" ))
-	(pt -16 488)
-	(pt -56 488)
-)
-(connector
 	(pt 824 520)
 	(pt 824 464)
 )
@@ -1424,4 +1429,18 @@ applicable agreement for further details.
 (connector
 	(pt 1096 400)
 	(pt 1104 400)
+)
+(connector
+	(text "pixel" (rect -48 472 -26 484)(font "Arial" ))
+	(pt -16 488)
+	(pt -56 488)
+)
+(connector
+	(pt -56 464)
+	(pt -56 488)
+)
+(connector
+	(text "pixel_div2" (rect -16 576 33 588)(font "Arial" ))
+	(pt -24 592)
+	(pt 24 592)
 )
