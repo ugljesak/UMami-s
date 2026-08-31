@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 256 272)
+	(rect 16 16 256 304)
 	(text "SDRAM_CNTR" (rect 5 0 87 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -157,6 +157,20 @@ applicable agreement for further details.
 		(line (pt 240 208)(pt 224 208))
 	)
 	(port
+		(pt 240 240)
+		(output)
+		(text "romAddr[5..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "romAddr[5..0]" (rect 142 235 219 249)(font "Arial" (font_size 8)))
+		(line (pt 240 240)(pt 224 240)(line_width 3))
+	)
+	(port
+		(pt 240 256)
+		(output)
+		(text "q[2]" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "q[2]" (rect 198 251 219 265)(font "Arial" (font_size 8)))
+		(line (pt 240 256)(pt 224 256))
+	)
+	(port
 		(pt 240 224)
 		(bidir)
 		(text "DRAM_DQ[15..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
@@ -164,6 +178,6 @@ applicable agreement for further details.
 		(line (pt 240 224)(pt 224 224)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 240))
+		(rectangle (rect 16 16 224 272))
 	)
 )

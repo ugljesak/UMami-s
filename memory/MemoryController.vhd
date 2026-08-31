@@ -42,7 +42,7 @@ USE altera_mf.all;
 ENTITY MemoryController IS
 	PORT
 	(
-		address		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+		address		: IN STD_LOGIC_VECTOR (10 DOWNTO 0);
 		addressstall_a		: IN STD_LOGIC  := '0';
 		byteena		: IN STD_LOGIC_VECTOR (3 DOWNTO 0) :=  (OTHERS => '1');
 		clock		: IN STD_LOGIC  := '1';
@@ -79,7 +79,7 @@ ARCHITECTURE SYN OF memorycontroller IS
 		width_byteena_a		: NATURAL
 	);
 	PORT (
-			address_a	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+			address_a	: IN STD_LOGIC_VECTOR (10 DOWNTO 0);
 			addressstall_a	: IN STD_LOGIC ;
 			byteena_a	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
 			clock0	: IN STD_LOGIC ;
@@ -101,13 +101,13 @@ BEGIN
 		intended_device_family => "Cyclone III",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",
-		numwords_a => 4096,
+		numwords_a => 2048,
 		operation_mode => "SINGLE_PORT",
 		outdata_aclr_a => "NONE",
 		outdata_reg_a => "UNREGISTERED",
 		power_up_uninitialized => "FALSE",
 		read_during_write_mode_port_a => "OLD_DATA",
-		widthad_a => 12,
+		widthad_a => 11,
 		width_a => 32,
 		width_byteena_a => 4
 	)
@@ -148,7 +148,7 @@ END SYN;
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 -- Retrieval info: PRIVATE: MIFfilename STRING "ramInit.mif"
--- Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "4096"
+-- Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "2048"
 -- Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 -- Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "1"
 -- Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -158,7 +158,7 @@ END SYN;
 -- Retrieval info: PRIVATE: SingleClock NUMERIC "1"
 -- Retrieval info: PRIVATE: UseDQRAM NUMERIC "1"
 -- Retrieval info: PRIVATE: WRCONTROL_ACLR_A NUMERIC "0"
--- Retrieval info: PRIVATE: WidthAddr NUMERIC "12"
+-- Retrieval info: PRIVATE: WidthAddr NUMERIC "11"
 -- Retrieval info: PRIVATE: WidthData NUMERIC "32"
 -- Retrieval info: PRIVATE: rden NUMERIC "0"
 -- Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
@@ -169,23 +169,23 @@ END SYN;
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone III"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
--- Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "4096"
+-- Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "2048"
 -- Retrieval info: CONSTANT: OPERATION_MODE STRING "SINGLE_PORT"
 -- Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
 -- Retrieval info: CONSTANT: OUTDATA_REG_A STRING "UNREGISTERED"
 -- Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 -- Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_PORT_A STRING "OLD_DATA"
--- Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "12"
+-- Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "11"
 -- Retrieval info: CONSTANT: WIDTH_A NUMERIC "32"
 -- Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "4"
--- Retrieval info: USED_PORT: address 0 0 12 0 INPUT NODEFVAL "address[11..0]"
+-- Retrieval info: USED_PORT: address 0 0 11 0 INPUT NODEFVAL "address[10..0]"
 -- Retrieval info: USED_PORT: addressstall_a 0 0 0 0 INPUT GND "addressstall_a"
 -- Retrieval info: USED_PORT: byteena 0 0 4 0 INPUT VCC "byteena[3..0]"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 -- Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
 -- Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
 -- Retrieval info: USED_PORT: wren 0 0 0 0 INPUT NODEFVAL "wren"
--- Retrieval info: CONNECT: @address_a 0 0 12 0 address 0 0 12 0
+-- Retrieval info: CONNECT: @address_a 0 0 11 0 address 0 0 11 0
 -- Retrieval info: CONNECT: @addressstall_a 0 0 0 0 addressstall_a 0 0 0 0
 -- Retrieval info: CONNECT: @byteena_a 0 0 4 0 byteena 0 0 4 0
 -- Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0

@@ -79,9 +79,6 @@ set_location_assignment PIN_E11 -to unitsH[0]
 
 # ---- ALU i njena hijerarhija ----
 
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SEARCH_PATH "/home/milos/Faks/AR/UMami-s/core/ControlUnit"
 set_global_assignment -name SEARCH_PATH memory/
 set_global_assignment -name SEARCH_PATH core/components/alu
@@ -118,6 +115,32 @@ set_location_assignment PIN_C2 -to debug[7]
 set_location_assignment PIN_C1 -to debug[6]
 set_location_assignment PIN_E1 -to debug[5]
 set_location_assignment PIN_F2 -to debug[4]
+set_location_assignment PIN_P22 -to PS2CLK
+set_location_assignment PIN_P21 -to PS2Data
+set_global_assignment -name BDF_FILE core/Components/REG/LD_CL_INC/REG32_LD_CL_INC.bdf
+set_global_assignment -name BDF_FILE core/Components/REG/LD_CL_INC/REG16_LD_CL_INC.bdf
+set_global_assignment -name VHDL_FILE gpu/components/io_buffer.vhd
+set_global_assignment -name SOURCE_FILE gpu/components/io_buffer.cmp
+set_global_assignment -name VHDL_FILE gpu/components/GPUPLL.vhd
+set_global_assignment -name SOURCE_FILE gpu/components/GPUPLL.cmp
+set_global_assignment -name BDF_FILE gpu/components/arbitar.bdf
+set_global_assignment -name VHDL_FILE gpu/components/lpm_mux2.vhd
+set_global_assignment -name SOURCE_FILE gpu/components/lpm_mux2.cmp
+set_global_assignment -name VHDL_FILE VGA/lpm_mux0.vhd
+set_global_assignment -name SOURCE_FILE VGA/lpm_mux0.cmp
+set_global_assignment -name VHDL_FILE VGA/ram2port.vhd
+set_global_assignment -name SOURCE_FILE VGA/ram2port.cmp
+set_global_assignment -name VHDL_FILE VGA/mux2_1_16bitova.vhd
+set_global_assignment -name SOURCE_FILE VGA/mux2_1_16bitova.cmp
+set_global_assignment -name VHDL_FILE VGA/mux2_1.vhd
+set_global_assignment -name SOURCE_FILE VGA/mux2_1.cmp
+set_global_assignment -name BDF_FILE VGA/Monitor.bdf
+set_global_assignment -name VHDL_FILE VGA/lpm_mux20.vhd
+set_global_assignment -name SOURCE_FILE VGA/lpm_mux20.cmp
+set_global_assignment -name VHDL_FILE VGA/lpm_mux1.vhd
+set_global_assignment -name SOURCE_FILE VGA/lpm_mux1.cmp
+set_global_assignment -name BDF_FILE VGA/Filler.bdf
+set_global_assignment -name BDF_FILE VGA/Controller.bdf
 set_global_assignment -name BDF_FILE PS2/PS2Mouse.bdf
 set_global_assignment -name BDF_FILE core/Components/COMP/Comparator16.bdf
 set_global_assignment -name BDF_FILE core/Components/MUL/MUL32.bdf
@@ -140,9 +163,6 @@ set_global_assignment -name BDF_FILE gpu/sdram_controller/SDRAM_CNTR.bdf
 set_global_assignment -name QIP_FILE memory/MemoryController.qip
 set_global_assignment -name SOURCE_FILE memory/MemoryController.cmp
 set_global_assignment -name VHDL_FILE memory/MemoryController.vhd
-set_global_assignment -name SOURCE_FILE lpm_mux0.cmp
-set_global_assignment -name QIP_FILE lpm_mux0.qip
-set_global_assignment -name VHDL_FILE lpm_mux0.vhd
 set_global_assignment -name BDF_FILE core/Components/ALU/ALU32.bdf
 set_global_assignment -name BDF_FILE core/ControlUnit/CSR/CSRDecoder.bdf
 set_global_assignment -name BDF_FILE REG_FILE/32xREG32_FILE.bdf
@@ -180,7 +200,6 @@ set_global_assignment -name BDF_FILE core/Registers/IR.bdf
 set_global_assignment -name BDF_FILE core/Components/DC/DC3_8.bdf
 set_global_assignment -name QIP_FILE gpu/SDRAM_CNTR_ROM.qip
 set_global_assignment -name MIF_FILE gpu/microcode.mif
-set_global_assignment -name QIP_FILE gpu/lpm_mux0.qip
 set_global_assignment -name BDF_FILE gpu/SDRAM_CNTR.bdf
 set_global_assignment -name QIP_FILE gpu/lpm_mux1.qip
 set_global_assignment -name QIP_FILE gpu/lpm_mux2.qip
@@ -250,6 +269,70 @@ set_global_assignment -name BDF_FILE core/Components/COMP/Comparator8.bdf
 set_global_assignment -name BDF_FILE core/Components/COMP/Comparator4.bdf
 set_global_assignment -name BDF_FILE core/Components/COMP/Comparator2.bdf
 set_global_assignment -name BDF_FILE core/Components/COMP/Comparator1.bdf
-set_location_assignment PIN_P22 -to PS2CLK
-set_location_assignment PIN_P21 -to PS2Data
+set_global_assignment -name BDF_FILE gpu/dma/writer_DMA.bdf
+set_global_assignment -name VHDL_FILE gpu/components/lpm_mux10.vhd
+set_global_assignment -name SOURCE_FILE gpu/components/lpm_mux10.cmp
+set_global_assignment -name BDF_FILE gpu/testSdramVgaDma.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_A7 -to ADDR[11]
+set_location_assignment PIN_B4 -to ADDR[10]
+set_location_assignment PIN_B7 -to ADDR[9]
+set_location_assignment PIN_C7 -to ADDR[8]
+set_location_assignment PIN_A6 -to ADDR[7]
+set_location_assignment PIN_B6 -to ADDR[6]
+set_location_assignment PIN_C6 -to ADDR[5]
+set_location_assignment PIN_A5 -to ADDR[4]
+set_location_assignment PIN_C3 -to ADDR[3]
+set_location_assignment PIN_B3 -to ADDR[2]
+set_location_assignment PIN_A3 -to ADDR[1]
+set_location_assignment PIN_C4 -to ADDR[0]
+set_location_assignment PIN_A4 -to ba[1]
+set_location_assignment PIN_B5 -to ba[0]
+set_location_assignment PIN_F10 -to DRAM_DQ[15]
+set_location_assignment PIN_E10 -to DRAM_DQ[14]
+set_location_assignment PIN_A10 -to DRAM_DQ[13]
+set_location_assignment PIN_B10 -to DRAM_DQ[12]
+set_location_assignment PIN_C10 -to DRAM_DQ[11]
+set_location_assignment PIN_A9 -to DRAM_DQ[10]
+set_location_assignment PIN_B9 -to DRAM_DQ[9]
+set_location_assignment PIN_A8 -to DRAM_DQ[8]
+set_location_assignment PIN_F8 -to DRAM_DQ[7]
+set_location_assignment PIN_H9 -to DRAM_DQ[6]
+set_location_assignment PIN_G9 -to DRAM_DQ[5]
+set_location_assignment PIN_F9 -to DRAM_DQ[4]
+set_location_assignment PIN_E9 -to DRAM_DQ[3]
+set_location_assignment PIN_H10 -to DRAM_DQ[2]
+set_location_assignment PIN_G10 -to DRAM_DQ[1]
+set_location_assignment PIN_D10 -to DRAM_DQ[0]
+set_location_assignment PIN_F7 -to RAS
+set_location_assignment PIN_D6 -to WE
+set_location_assignment PIN_E5 -to DRAM_CLK
+set_location_assignment PIN_B8 -to DQM[1]
+set_location_assignment PIN_E7 -to DQM[0]
+set_location_assignment PIN_G7 -to CS
+set_location_assignment PIN_K18 -to BLUE[3]
+set_location_assignment PIN_J22 -to BLUE[2]
+set_location_assignment PIN_K21 -to BLUE[1]
+set_location_assignment PIN_K22 -to BLUE[0]
+set_location_assignment PIN_G8 -to CAS
+set_location_assignment PIN_E6 -to CKE
+set_location_assignment PIN_J21 -to GREEN[3]
+set_location_assignment PIN_K17 -to GREEN[2]
+set_location_assignment PIN_J17 -to GREEN[1]
+set_location_assignment PIN_H22 -to GREEN[0]
+set_location_assignment PIN_L21 -to HS
+set_location_assignment PIN_H21 -to RED[3]
+set_location_assignment PIN_H20 -to RED[2]
+set_location_assignment PIN_H17 -to RED[1]
+set_location_assignment PIN_H19 -to RED[0]
+set_location_assignment PIN_L22 -to VS
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

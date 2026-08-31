@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 264 176)
+	(rect 16 16 264 208)
 	(text "ControlUnit" (rect 5 0 66 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -50,6 +50,13 @@ applicable agreement for further details.
 		(text "mouseData[23..0]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
 		(text "mouseData[23..0]" (rect 21 75 120 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "buffer_ready" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "buffer_ready" (rect 21 91 96 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 248 32)
@@ -89,18 +96,32 @@ applicable agreement for further details.
 	(port
 		(pt 248 112)
 		(output)
-		(text "memDebug[31..0]" (rect 0 0 97 14)(font "Arial" (font_size 8)))
-		(text "memDebug[31..0]" (rect 130 107 227 121)(font "Arial" (font_size 8)))
+		(text "out_addr[7..0]" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "out_addr[7..0]" (rect 148 107 227 121)(font "Arial" (font_size 8)))
 		(line (pt 248 112)(pt 232 112)(line_width 3))
 	)
 	(port
 		(pt 248 128)
 		(output)
-		(text "debug[31..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "debug[31..0]" (rect 157 123 227 137)(font "Arial" (font_size 8)))
+		(text "out_data[31..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "out_data[31..0]" (rect 143 123 227 137)(font "Arial" (font_size 8)))
 		(line (pt 248 128)(pt 232 128)(line_width 3))
 	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "memDebug[31..0]" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "memDebug[31..0]" (rect 130 139 227 153)(font "Arial" (font_size 8)))
+		(line (pt 248 144)(pt 232 144)(line_width 3))
+	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "debug[31..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "debug[31..0]" (rect 157 155 227 169)(font "Arial" (font_size 8)))
+		(line (pt 248 160)(pt 232 160)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 232 144))
+		(rectangle (rect 16 16 232 176))
 	)
 )
