@@ -128,6 +128,13 @@ applicable agreement for further details.
 		(text "eY" (rect 187 171 203 185)(font "Arial" (font_size 8)))
 		(line (pt 224 176)(pt 208 176))
 	)
+	(port
+		(pt 224 192)
+		(output)
+		(text "vblank" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "vblank" (rect 167 187 203 201)(font "Arial" (font_size 8)))
+		(line (pt 224 192)(pt 208 192))
+	)
 	(drawing
 		(rectangle (rect 16 16 208 208))
 	)

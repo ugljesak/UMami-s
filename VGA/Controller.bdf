@@ -978,49 +978,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 680 696 776 792)
-	(text "Comparator10" (rect 5 0 85 14)(font "Arial" (font_size 8)))
-	(text "inst13" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[9..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "A[9..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "B[9..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "B[9..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "G" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "G" (rect 66 27 75 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(port
-		(pt 96 48)
-		(output)
-		(text "L" (rect 0 0 7 14)(font "Arial" (font_size 8)))
-		(text "L" (rect 68 43 75 57)(font "Arial" (font_size 8)))
-		(line (pt 96 48)(pt 80 48))
-	)
-	(port
-		(pt 96 64)
-		(output)
-		(text "E" (rect 0 0 7 14)(font "Arial" (font_size 8)))
-		(text "E" (rect 68 59 75 73)(font "Arial" (font_size 8)))
-		(line (pt 96 64)(pt 80 64))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
 	(rect 24 32 72 64)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst14" (rect 3 21 32 33)(font "Arial" ))
@@ -1246,23 +1203,6 @@ applicable agreement for further details.
 	(pt 824 464)
 )
 (connector
-	(text "<<__$DEF_ALIAS16307>>" (rect 808 448 937 460)(font "Arial" )(invisible))
-	(pt 776 464)
-	(pt 824 464)
-)
-(connector
-	(text "Y[9..0]" (rect 632 712 666 724)(font "Arial" ))
-	(pt 680 728)
-	(pt 624 728)
-	(bus)
-)
-(connector
-	(text "1,1,1,1,0,0,0,0,0,0" (rect 600 728 690 740)(font "Arial" ))
-	(pt 680 744)
-	(pt 624 744)
-	(bus)
-)
-(connector
 	(text "eX" (rect 984 376 995 388)(font "Arial" ))
 	(pt 1032 392)
 	(pt 976 392)
@@ -1459,4 +1399,9 @@ applicable agreement for further details.
 	(text "RST" (rect -80 488 -59 500)(font "Arial" ))
 	(pt -24 504)
 	(pt -88 504)
+)
+(connector
+	(text "vactive" (rect 785 448 822 460)(font "Arial" ))
+	(pt 776 464)
+	(pt 824 464)
 )

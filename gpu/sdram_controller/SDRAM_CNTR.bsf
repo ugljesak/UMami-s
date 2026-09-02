@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 256 304)
+	(rect 16 16 256 336)
 	(text "SDRAM_CNTR" (rect 5 0 87 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -171,6 +171,13 @@ applicable agreement for further details.
 		(line (pt 240 256)(pt 224 256))
 	)
 	(port
+		(pt 240 272)
+		(output)
+		(text "BurstComplete" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "BurstComplete" (rect 137 267 219 281)(font "Arial" (font_size 8)))
+		(line (pt 240 272)(pt 224 272))
+	)
+	(port
 		(pt 240 224)
 		(bidir)
 		(text "DRAM_DQ[15..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
@@ -178,6 +185,6 @@ applicable agreement for further details.
 		(line (pt 240 224)(pt 224 224)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 272))
+		(rectangle (rect 16 16 224 304))
 	)
 )

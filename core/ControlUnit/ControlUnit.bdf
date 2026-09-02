@@ -9035,18 +9035,6 @@ applicable agreement for further details.
 	(pt 2832 752)
 )
 (connector
-	(text "0,0,0,0,ones[11..0]" (rect 2521 1072 2614 1084)(font "Arial" ))
-	(pt 2520 1088)
-	(pt 2632 1088)
-	(bus)
-)
-(connector
-	(text "0,0,0,0,dadr[13..2]" (rect 2533 1056 2623 1068)(font "Arial" ))
-	(pt 2528 1072)
-	(pt 2632 1072)
-	(bus)
-)
-(connector
 	(text "mem[31..0]" (rect 2720 792 2776 804)(font "Arial" ))
 	(pt 2680 808)
 	(pt 2760 808)
@@ -9625,6 +9613,18 @@ applicable agreement for further details.
 	(pt 1408 128)
 	(pt 1360 128)
 )
+(connector
+	(text "0,0,0,0,0,dadr[12..2]" (rect 2533 1056 2633 1068)(font "Arial" ))
+	(pt 2528 1072)
+	(pt 2632 1072)
+	(bus)
+)
+(connector
+	(text "0,0,0,0,0,ones[10..0]" (rect 2521 1072 2623 1084)(font "Arial" ))
+	(pt 2520 1088)
+	(pt 2632 1088)
+	(bus)
+)
 (junction (pt 56 1112))
 (junction (pt 56 1016))
 (junction (pt 1944 -400))
@@ -9646,7 +9646,7 @@ applicable agreement for further details.
 (title_block
 	(rect 2112 -232 2480 -112)
 	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 12)(font "Arial" ))(text "UMami-s" (rect 56 2 132 20)(font "Arial" (font_size 12)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Tue Sep 01 01:57:57 2026" (rect 56 3 235 19)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Wed Sep 02 03:58:16 2026" (rect 56 3 242 19)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 59 12)(font "Arial" ))(text "ugoboss" (rect 56 2 126 20)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 49 12)(font "Arial" ))(text "1.00" (rect 56 1 85 17)(font "Arial" (font_size 10)))(border))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 12)(font "Arial" ))(text "1" (rect 34 4 42 20)(font "Arial" (font_size 10))))
