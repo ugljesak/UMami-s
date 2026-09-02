@@ -1,0 +1,18 @@
+newmtl wall_dark
+Kd 0.53 0.27 0.07
+newmtl wall_mid1
+Kd 0.73 0.40 0.13
+newmtl wall_mid2
+Kd 0.80 0.47 0.20
+newmtl wall_light
+Kd 1.00 0.67 0.27
+newmtl roof_dark
+Kd 0.47 0.00 0.00
+newmtl roof_mid1
+Kd 0.67 0.00 0.00
+newmtl roof_mid2
+Kd 0.80 0.07 0.07
+newmtl roof_light
+Kd 1.00 0.13 0.13
+newmtl floor
+Kd 0.13 0.13 0.13
