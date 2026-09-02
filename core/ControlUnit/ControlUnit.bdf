@@ -779,7 +779,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 112 168 176 216)
+	(rect 144 136 208 184)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -812,7 +812,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 224 176 272 208)
+	(rect 256 144 304 176)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst15" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -2516,7 +2516,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -464 544 -416 576)
+	(rect 280 848 328 880)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst61" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -6589,21 +6589,6 @@ applicable agreement for further details.
 	(pt 456 200)
 )
 (connector
-	(text "jump" (rect 56 184 79 196)(font "Arial" ))
-	(pt 48 200)
-	(pt 112 200)
-)
-(connector
-	(text "takeBranch" (rect 56 168 111 180)(font "Arial" ))
-	(pt 48 184)
-	(pt 112 184)
-)
-(connector
-	(text "pc_sel" (rect 185 176 216 188)(font "Arial" ))
-	(pt 176 192)
-	(pt 224 192)
-)
-(connector
 	(text "n_pcsel" (rect 408 240 445 252)(font "Arial" ))
 	(pt 456 256)
 	(pt 408 256)
@@ -7165,11 +7150,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "n_pcsel" (rect 296 176 333 188)(font "Arial" ))
-	(pt 272 192)
-	(pt 320 192)
-)
-(connector
 	(text "RESET" (rect 1176 1320 1211 1332)(font "Arial" ))
 	(pt 1168 1336)
 	(pt 1200 1336)
@@ -7199,18 +7179,6 @@ applicable agreement for further details.
 	(text "CLK" (rect -368 288 -347 300)(font "Arial" ))
 	(pt -376 304)
 	(pt -320 304)
-)
-(connector
-	(text "pc[31..0]" (rect -520 544 -477 556)(font "Arial" ))
-	(pt -464 560)
-	(pt -528 560)
-	(bus)
-)
-(connector
-	(text "PC[31..0]" (rect -408 544 -361 556)(font "Arial" ))
-	(pt -416 560)
-	(pt -368 560)
-	(bus)
 )
 (connector
 	(text "active" (rect -472 296 -442 308)(font "Arial" ))
@@ -9625,6 +9593,65 @@ applicable agreement for further details.
 	(pt 2632 1088)
 	(bus)
 )
+(connector
+	(pt 1744 -304)
+	(pt 1744 -288)
+)
+(connector
+	(text "nRST" (rect 1750 -304 1777 -292)(font "Arial" ))
+	(pt 1744 -288)
+	(pt 1792 -288)
+)
+(connector
+	(pt 1088 -552)
+	(pt 1088 -536)
+)
+(connector
+	(text "nRST" (rect 1094 -552 1121 -540)(font "Arial" ))
+	(pt 1088 -536)
+	(pt 1136 -536)
+)
+(connector
+	(pt 1088 -432)
+	(pt 1088 -416)
+)
+(connector
+	(text "nRST" (rect 1094 -432 1121 -420)(font "Arial" ))
+	(pt 1088 -416)
+	(pt 1136 -416)
+)
+(connector
+	(text "pc[31..0]" (rect 224 848 267 860)(font "Arial" ))
+	(pt 280 864)
+	(pt 216 864)
+	(bus)
+)
+(connector
+	(text "PC[31..0]" (rect 336 848 383 860)(font "Arial" ))
+	(pt 328 864)
+	(pt 376 864)
+	(bus)
+)
+(connector
+	(text "jump" (rect 88 152 111 164)(font "Arial" ))
+	(pt 80 168)
+	(pt 144 168)
+)
+(connector
+	(text "takeBranch" (rect 88 136 143 148)(font "Arial" ))
+	(pt 80 152)
+	(pt 144 152)
+)
+(connector
+	(text "pc_sel" (rect 217 144 248 156)(font "Arial" ))
+	(pt 208 160)
+	(pt 256 160)
+)
+(connector
+	(text "n_pcsel" (rect 328 144 365 156)(font "Arial" ))
+	(pt 304 160)
+	(pt 352 160)
+)
 (junction (pt 56 1112))
 (junction (pt 56 1016))
 (junction (pt 1944 -400))
@@ -9646,7 +9673,7 @@ applicable agreement for further details.
 (title_block
 	(rect 2112 -232 2480 -112)
 	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 12)(font "Arial" ))(text "UMami-s" (rect 56 2 132 20)(font "Arial" (font_size 12)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Wed Sep 02 03:58:16 2026" (rect 56 3 242 19)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Wed Sep 02 18:58:59 2026" (rect 56 3 242 19)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 59 12)(font "Arial" ))(text "ugoboss" (rect 56 2 126 20)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 49 12)(font "Arial" ))(text "1.00" (rect 56 1 85 17)(font "Arial" (font_size 10)))(border))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 12)(font "Arial" ))(text "1" (rect 34 4 42 20)(font "Arial" (font_size 10))))

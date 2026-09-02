@@ -178,6 +178,13 @@ applicable agreement for further details.
 		(line (pt 240 272)(pt 224 272))
 	)
 	(port
+		(pt 240 288)
+		(output)
+		(text "bus_idle" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "bus_idle" (rect 172 283 219 297)(font "Arial" (font_size 8)))
+		(line (pt 240 288)(pt 224 288))
+	)
+	(port
 		(pt 240 224)
 		(bidir)
 		(text "DRAM_DQ[15..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))

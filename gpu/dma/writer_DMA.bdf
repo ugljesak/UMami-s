@@ -137,7 +137,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 240 280 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "frame_sel" (rect 5 0 55 12)(font "Arial" ))
+	(text "frame_sel" (rect 5 0 54 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -153,7 +153,7 @@ applicable agreement for further details.
 	(input)
 	(rect 104 264 272 280)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "swap" (rect 5 0 30 12)(font "Arial" ))
+	(text "swap" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1190,7 +1190,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 184 760 280 856)
+	(rect 216 672 312 768)
 	(text "Comparator16" (rect 5 0 85 14)(font "Arial" (font_size 8)))
 	(text "inst16" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -1233,7 +1233,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 368 880 432 928)
+	(rect 400 792 464 840)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 37 32 49)(font "Arial" ))
 	(port
@@ -1265,7 +1265,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 184 912 280 1008)
+	(rect 216 824 312 920)
 	(text "Comparator8" (rect 5 0 78 14)(font "Arial" (font_size 8)))
 	(text "inst18" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -1308,7 +1308,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 480 888 528 920)
+	(rect 512 800 560 832)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst19" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -2581,50 +2581,6 @@ applicable agreement for further details.
 	(pt 632 416)
 )
 (connector
-	(text "data[15..0]" (rect 112 776 165 788)(font "Arial" ))
-	(pt 184 792)
-	(pt 104 792)
-	(bus)
-)
-(connector
-	(text "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1" (rect 96 792 243 804)(font "Arial" ))
-	(pt 184 808)
-	(pt 88 808)
-	(bus)
-)
-(connector
-	(pt 280 824)
-	(pt 368 824)
-)
-(connector
-	(pt 368 824)
-	(pt 368 896)
-)
-(connector
-	(text "bad" (rect 440 888 457 900)(font "Arial" ))
-	(pt 432 904)
-	(pt 480 904)
-)
-(connector
-	(text "valid" (rect 529 888 552 900)(font "Arial" ))
-	(pt 528 904)
-	(pt 568 904)
-)
-(connector
-	(pt 368 912)
-	(pt 368 976)
-)
-(connector
-	(pt 368 976)
-	(pt 280 976)
-)
-(connector
-	(text "1,1,1,1,1,1,1,1" (rect 112 944 183 956)(font "Arial" ))
-	(pt 104 960)
-	(pt 184 960)
-	(bus)
-)
-(connector
 	(text "addr[7..0]" (rect 616 560 663 572)(font "Arial" ))
 	(pt 664 576)
 	(pt 608 576)
@@ -2645,12 +2601,6 @@ applicable agreement for further details.
 	(text "nWrite_done" (rect 865 592 926 604)(font "Arial" ))
 	(pt 864 608)
 	(pt 912 608)
-)
-(connector
-	(text "addr[7..0]" (rect 91 928 138 940)(font "Arial" ))
-	(pt 104 944)
-	(pt 184 944)
-	(bus)
 )
 (connector
 	(text "nRead_done" (rect 1672 536 1733 548)(font "Arial" ))
@@ -3173,4 +3123,54 @@ applicable agreement for further details.
 	(text "<<__$DEF_ALIAS1931>>" (rect 1248 576 1371 588)(font "Arial" )(invisible))
 	(pt 1248 592)
 	(pt 1320 592)
+)
+(connector
+	(text "data[15..0]" (rect 144 688 197 700)(font "Arial" ))
+	(pt 216 704)
+	(pt 136 704)
+	(bus)
+)
+(connector
+	(text "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1" (rect 128 704 275 716)(font "Arial" ))
+	(pt 216 720)
+	(pt 120 720)
+	(bus)
+)
+(connector
+	(pt 312 736)
+	(pt 400 736)
+)
+(connector
+	(pt 400 736)
+	(pt 400 808)
+)
+(connector
+	(text "bad" (rect 472 800 489 812)(font "Arial" ))
+	(pt 464 816)
+	(pt 512 816)
+)
+(connector
+	(text "valid" (rect 561 800 584 812)(font "Arial" ))
+	(pt 560 816)
+	(pt 600 816)
+)
+(connector
+	(pt 400 824)
+	(pt 400 888)
+)
+(connector
+	(pt 400 888)
+	(pt 312 888)
+)
+(connector
+	(text "1,1,1,1,1,1,1,1" (rect 144 856 215 868)(font "Arial" ))
+	(pt 136 872)
+	(pt 216 872)
+	(bus)
+)
+(connector
+	(text "addr[7..0]" (rect 123 840 170 852)(font "Arial" ))
+	(pt 136 856)
+	(pt 216 856)
+	(bus)
 )

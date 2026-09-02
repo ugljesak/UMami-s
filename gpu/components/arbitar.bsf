@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 192 144)
+	(rect 16 16 192 176)
 	(text "arbitar" (rect 5 0 41 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -59,6 +59,13 @@ applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "bus_idle" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "bus_idle" (rect 21 107 68 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
 		(pt 176 32)
 		(output)
 		(text "busy" (rect 0 0 28 14)(font "Arial" (font_size 8)))
@@ -80,6 +87,6 @@ applicable agreement for further details.
 		(line (pt 176 64)(pt 160 64))
 	)
 	(drawing
-		(rectangle (rect 16 16 160 112))
+		(rectangle (rect 16 16 160 144))
 	)
 )
