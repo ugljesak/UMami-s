@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OBJ & MTL to MIF Converter</title>
+  <style>
+    * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #121214; color: #e1e1e6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+    .card { background: #1e1e24; border: 1px solid #2e2e38; border-radius: 12px; width: 100%; max-width: 580px; padding: 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    h2 { margin-top: 0; color: #fff; text-align: center; font-size: 1.5rem; }
+    p.desc { text-align: center; color: #a0a0b0; font-size: 0.9rem; margin-bottom: 24px; }
+    .drop-zone { border: 2px dashed #4f46e5; border-radius: 8px; padding: 40px 20px; text-align: center; background: #18181c; cursor: pointer; transition: all 0.2s ease; }
+    .drop-zone.hover { background: #232338; border-color: #6366f1; }
+    .drop-zone p { margin: 0; font-size: 0.95rem; color: #818cf8; font-weight: 500; }
+    .drop-zone span { font-size: 0.8rem; color: #6b7280; display: block; margin-top: 6px; }
+    #file-input { display: none; }
+    .status { margin-top: 20px; padding: 12px; background: #141417; border-radius: 6px; font-family: monospace; font-size: 0.85rem; color: #10b981; max-height: 150px; overflow-y: auto; white-space: pre-wrap; display: none; }
+    .status.error { color: #f87171; }
+    .btn { display: block; width: 100%; margin-top: 20px; padding: 12px; background: #4f46e5; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; text-align: center; transition: background 0.2s ease; text-decoration: none; }
+    .btn:hover { background: #4338ca; }
+    .btn:disabled { background: #374151; cursor: not-allowed; opacity: 0.6; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>OBJ/MTL to MIF Converter</h2>
+  <p class="desc">Drag & drop your <code>.obj</code> and <code>.mtl</code> files together to generate a memory file.</p>
+  
+  <div class="drop-zone" id="drop-zone">
+    <p>Drop .OBJ and .MTL files here</p>
+    <span>or click to browse from your computer</span>
+    <input type="file" id="file-input" multiple accept=".obj,.mtl">
+  </div>
+
+  <div id="status" class="status"></div>
+  <button id="download-btn" class="btn" disabled>Download .MIF File</button>
+</div>
+
+<script>
+  const dropZone = document.getElementById('drop-zone');
+  const fileInput = document.getElementById('file-input');
+  const statusEl = document.getElementById('status');
+  const downloadBtn = document.getElementById('download-btn');
+
+  let generatedMifContent = null;
+  let outputFilename = "model.mif";
+
+  dropZone.addEventListener('click', () => fileInput.click());
+
+  ['dragenter', 'dragover'].forEach(name => {
+    dropZone.addEventListener(name, (e) => {
+      e.preventDefault();
+      dropZone.classList.add('hover');
+    });
+  });
+
+  ['dragleave', 'drop'].forEach(name => {
+    dropZone.addEventListener(name, (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('hover');
+    });
+  });
+
+  dropZone.addEventListener('drop', (e) => handleFiles(e.dataTransfer.files));
+  fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+
+  async function handleFiles(files) {
+    statusEl.style.display = 'block';
+    statusEl.classList.remove('error');
+    statusEl.textContent = "Processing files...\n";
+    downloadBtn.disabled = true;
+
+    let objFile = null;
+    let mtlFile = null;
+
+    for (let file of files) {
+      if (file.name.endsWith('.obj')) objFile = file;
+      if (file.name.endsWith('.mtl')) mtlFile = file;
+    }
+
+    if (!objFile) {
+      statusEl.classList.add('error');
+      statusEl.textContent = "Error: Please include at least one .obj file.";
+      return;
+    }
+
+    outputFilename = objFile.name.replace(/\.obj$/i, '') + ".mif";
+
+    try {
+      const objText = await objFile.text();
+      let mtlText = "";
+      if (mtlFile) {
+        mtlText = await mtlFile.text();
+        statusEl.textContent += `Loaded MTL: ${mtlFile.name}\n`;
+      } else {
+        statusEl.textContent += "No MTL file provided. Using default gray colors.\n";
+      }
+
+      const mtlDict = parseMTL(mtlText);
+      const { V, F } = parseOBJ(objText);
+
+      statusEl.textContent += `Parsed ${V.length} vertices and ${F.length} triangles.\n`;
+
+      generatedMifContent = buildMIF(V, F, mtlDict);
+      statusEl.textContent += `Successfully generated ${outputFilename}!`;
+      downloadBtn.disabled = false;
+    } catch (err) {
+      statusEl.classList.add('error');
+      statusEl.textContent = `Error: ${err.message}`;
+    }
+  }
+
+  function parseMTL(text) {
+    const cols = {};
+    let cur = null;
+    for (let line of text.split(/\r?\n/)) {
+      line = line.trim();
+      if (!line || line.startsWith('#')) continue;
+      const t = line.split(/\s+/);
+      if (t[0] === 'newmtl') {
+        cur = t[1];
+      } else if (t[0] === 'Kd' && cur) {
+        const r = Math.max(0, Math.min(15, Math.round(parseFloat(t[1]) * 15)));
+        const g = Math.max(0, Math.min(15, Math.round(parseFloat(t[2]) * 15)));
+        const b = Math.max(0, Math.min(15, Math.round(parseFloat(t[3]) * 15)));
+        cols[cur] = (b << 8) | (g << 4) | r; // 0xBGR format
+      }
+    }
+    return cols;
+  }
+
+  function parseOBJ(text, coordMax = 255) {
+    const V = [];
+    const F = [];
+    let mat = 'default';
+
+    for (let line of text.split(/\r?\n/)) {
+      line = line.trim();
+      if (!line || line.startsWith('#')) continue;
+      const t = line.split(/\s+/);
+      if (t[0] === 'v') {
+        V.push([parseFloat(t[1]), parseFloat(t[2]), parseFloat(t[3])]);
+      } else if (t[0] === 'usemtl') {
+        mat = t[1];
+      } else if (t[0] === 'f') {
+        const idx = t.slice(1).map(p => parseInt(p.split('/')[0]) - 1);
+        for (let k = 1; k < idx.length - 1; k++) {
+          F.push([idx[0], idx[k], idx[k + 1], mat]);
+        }
+      }
+    }
+
+    if (V.length === 0) throw new Error("No vertices found in OBJ file.");
+
+    const cx = [0, 1, 2].map(i => (Math.min(...V.map(v => v[i])) + Math.max(...V.map(v => v[i]))) / 2);
+    let r = Math.max(...V.map(v => Math.max(...[0, 1, 2].map(i => Math.abs(v[i] - cx[i])))));
+    if (r === 0) r = 1;
+
+    const scaledV = V.map(v => [0, 1, 2].map(i => Math.round(((v[i] - cx[i]) / r) * coordMax)));
+
+    return { V: scaledV, F };
+  }
+
+  function packV(v) {
+    return ((v[0] & 0x3FF) | ((v[1] & 0x3FF) << 10) | ((v[2] & 0x3FF) << 20)) >>> 0;
+  }
+
+  function packT(f) {
+    return ((f[0] & 0xFF) | ((f[1] & 0xFF) << 8) | ((f[2] & 0xFF) << 16)) >>> 0;
+  }
+
+  function colourOf(mat, mtlDict) {
+    if (mtlDict.hasOwnProperty(mat)) return mtlDict[mat];
+    return 0x0888; // Fallback gray
+  }
+
+  function buildMIF(V, F, mtlDict) {
+    const DEPTH = 2048;
+    const mem = new Map();
+
+    // 65 Sine table entries at base address 1128
+    for (let k = 0; k < 65; k++) {
+      const val = Math.round(256 * Math.sin(2 * Math.PI * k / 256)) & 0xFFFFFFFF;
+      mem.set(1128 + k, val >>> 0);
+    }
+
+    const base = 1200;
+    mem.set(base, V.length >>> 0);
+    mem.set(base + 1, F.length >>> 0);
+
+    for (let i = 0; i < V.length; i++) mem.set(base + 2 + i, packV(V[i]));
+    for (let i = 0; i < F.length; i++) mem.set(base + 2 + V.length + i, packT(F[i]));
+    for (let i = 0; i < F.length; i++) mem.set(base + 2 + V.length + F.length + i, colourOf(F[i][3], mtlDict) >>> 0);
+
+    const lines = [
+      "DEPTH = 2048;",
+      "WIDTH = 32;",
+      "ADDRESS_RADIX = DEC;",
+      "DATA_RADIX = HEX;",
+      "CONTENT BEGIN"
+    ];
+
+    let prev = -1;
+    for (let a = 0; a < DEPTH; a++) {
+      const val = mem.get(a) || 0;
+      if (val === 0) {
+        if (prev === -1) prev = a;
+      } else {
+        if (prev !== -1) {
+          lines.push(prev === a - 1 ? `${prev} : 00000000;` : `[${prev}..${a - 1}] : 00000000;`);
+          prev = -1;
+        }
+        lines.push(`${a} : ${val.toString(16).toUpperCase().padStart(8, '0')};`);
+      }
+    }
+    if (prev !== -1) {
+      lines.push(prev === DEPTH - 1 ? `${prev} : 00000000;` : `[${prev}..${DEPTH - 1}] : 00000000;`);
+    }
+    lines.push("END;");
+
+    return lines.join("\n");
+  }
+
+  downloadBtn.addEventListener('click', () => {
+    if (!generatedMifContent) return;
+    const blob = new Blob([generatedMifContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = outputFilename;
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+</script>
+
+</body>
+</html>
